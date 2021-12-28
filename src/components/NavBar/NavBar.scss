@@ -1,4 +1,4 @@
-@use '../../styles/common.scss' as c;
+@use '../../styles/variables.scss' as v;
 .nav_wrap {
   background-color: black;
   display: flex;
@@ -9,18 +9,18 @@
     display: flex;
     width: 1500px;
 
-    color: c.$pointColor;
+    color: v.$pointColor;
 
     justify-content: space-between;
     height: 40px;
     h1 {
-      color: c.$pointColor;
+      color: v.$pointColor;
       span {
-        color: c.$whiteColor;
+        color: v.$whiteColor;
       }
     }
     button {
-      background-color: c.$whiteColor;
+      background-color: v.$whiteColor;
       // border: 1px solid;
       border-radius: 3px;
       width: 150px;
@@ -29,7 +29,7 @@
       margin-left: 10px;
     }
     button:hover {
-      background-color: c.$pointColor;
+      background-color: v.$pointColor;
       color: white;
     }
   }
