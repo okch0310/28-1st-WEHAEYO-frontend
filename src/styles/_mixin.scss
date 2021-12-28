@@ -1,0 +1,6 @@
+// 기본 너비와 높이
+@mixin width-height {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
