@@ -1,0 +1,22 @@
+@use '../../styles/variables.scss' as v;
+
+main {
+  background-color: v.$bgColor;
+
+  section {
+    display: flex;
+
+    img {
+      width: 120px;
+      border-radius: 10%;
+    }
+
+    .restaurant_info {
+      padding-left: 1rem;
+
+      p.stars {
+        color: #fcb60a;
+      }
+    }
+  }
+}
