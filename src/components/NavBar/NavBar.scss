@@ -1,0 +1,36 @@
+@use '../../styles/common.scss' as c;
+.nav_wrap {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  .nav_inside {
+    display: flex;
+    width: 1500px;
+
+    color: c.$pointColor;
+
+    justify-content: space-between;
+    height: 40px;
+    h1 {
+      color: c.$pointColor;
+      span {
+        color: c.$whiteColor;
+      }
+    }
+    button {
+      background-color: c.$whiteColor;
+      // border: 1px solid;
+      border-radius: 3px;
+      width: 150px;
+      height: 40px;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+    button:hover {
+      background-color: c.$pointColor;
+      color: white;
+    }
+  }
+}
