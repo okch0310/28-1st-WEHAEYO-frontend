@@ -1,9 +1,13 @@
 @use '../../styles/variables.scss' as v;
 
 main {
+  width: 1000px;
+  margin: 0 auto;
   background-color: v.$bgColor;
 
   section {
+    padding-bottom: 18px;
+    border-bottom: 2px solid #dbdbdb;
     display: flex;
 
     img {
@@ -14,8 +18,11 @@ main {
     .restaurant_info {
       padding-left: 1rem;
 
-      p.stars {
-        color: #fcb60a;
+      p {
+        &.stars {
+          font-size: 0.8rem;
+          color: #fcb60a;
+        }
       }
     }
   }
