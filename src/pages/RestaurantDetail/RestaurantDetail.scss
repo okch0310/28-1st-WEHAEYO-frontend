@@ -1,27 +1,81 @@
 @use '../../styles/variables.scss' as v;
 
-main {
-  width: 1000px;
-  margin: 0 auto;
+.restaurant_detail {
   background-color: v.$bgColor;
 
-  section {
-    padding-bottom: 18px;
-    border-bottom: 2px solid #dbdbdb;
-    display: flex;
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
 
-    img {
-      width: 120px;
-      border-radius: 10%;
+    section {
+      padding-bottom: 18px;
+      display: flex;
+
+      img {
+        width: 120px;
+        border-radius: 10%;
+      }
+
+      .restaurant_info {
+        padding-left: 1rem;
+
+        p {
+          &.stars {
+            font-size: 0.8rem;
+            color: #fcb60a;
+          }
+        }
+      }
     }
 
-    .restaurant_info {
-      padding-left: 1rem;
+    .menu_review_tab {
+      margin-bottom: 1rem;
 
-      p {
-        &.stars {
-          font-size: 0.8rem;
-          color: #fcb60a;
+      ul {
+        display: flex;
+        border: 1px solid #d9d9d9;
+        border-left: 0;
+
+        li {
+          width: 50%;
+          height: 40px;
+          border-left: 1px solid #d9d9d9;
+          text-align: center;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .content {
+      .signature_menu {
+        ul {
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            border: 1px solid #d9d9d9;
+
+            img {
+              width: 130px;
+              height: 80px;
+              object-fit: cover;
+            }
+
+            .menu_info {
+              width: 130px;
+              padding-left: 0.5rem;
+              padding-top: 0.2rem;
+              padding-bottom: 0.5rem;
+
+              h4 {
+                margin-bottom: 0.3rem;
+              }
+
+              p {
+                font-size: 0.875rem;
+              }
+            }
+          }
         }
       }
     }

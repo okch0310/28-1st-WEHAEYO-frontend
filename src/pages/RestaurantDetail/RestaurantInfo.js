@@ -1,6 +1,6 @@
 import { ImStarEmpty, ImStarHalf, ImStarFull } from 'react-icons/im';
 import { MdPlace } from 'react-icons/md';
-import { BsTelephoneFill } from 'react-icons/bs';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 import './RestaurantDetail.scss';
 
 export default function RestaurantInfo() {
@@ -22,7 +22,7 @@ export default function RestaurantInfo() {
           <MdPlace /> 서울시 강남구 선릉1로 104
         </p>
         <p>
-          <BsTelephoneFill /> 02-172-2847
+          <BsFillTelephoneFill /> 02-172-2847
         </p>
       </div>
     </section>
