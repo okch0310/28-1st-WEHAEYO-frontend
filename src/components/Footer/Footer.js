@@ -3,7 +3,7 @@ import './Footer.scss';
 
 export default function Footer() {
   return (
-    <div className="footerWrap">
+    <div className="Footer">
       <p>
         <strong>주식회사 위해요 </strong>
         <br />
