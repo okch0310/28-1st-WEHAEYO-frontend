@@ -5,7 +5,8 @@ import Signup from './pages/Signup/Signup';
 import Main from './pages/Main/Main';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-
+import SearchId from './pages/Search/searchid';
+import SearchPw from './pages/Search/searchPw';
 const Router = () => {
   return (
     <BrowserRouter>
@@ -14,6 +15,8 @@ const Router = () => {
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/searchId" element={<SearchId />} />
+        <Route path="/searchPw" element={<SearchPw />} />
       </Routes>
       <Footer />
     </BrowserRouter>
