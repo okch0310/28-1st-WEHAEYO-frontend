@@ -1,0 +1,62 @@
+.login_wrap {
+  display: flex;
+  justify-content: center;
+
+  .login_inside {
+    width: 700px;
+    // border: 1px solid lightgray;
+
+    .login_title {
+      font-size: 50px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      color: red;
+      display: flex;
+      justify-content: center;
+    }
+
+    .loginForm {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inputBox {
+      padding: 10px 15px;
+      height: 70px;
+      border: 1px solid lightgray;
+    }
+
+    .inqueryBox {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .inquery {
+        height: 20px;
+      }
+    }
+
+    .loginBtn {
+      height: 60px;
+      background-color: lightgray;
+    }
+
+    .btnOn {
+      height: 60px;
+      margin-top: 10px;
+      border-radius: 3px;
+      background-color: red;
+      border: 1px solid rgb(199, 196, 196);
+    }
+
+    .btnOff {
+      height: 60px;
+      margin-top: 10px;
+      border-radius: 3px;
+      background-color: lightgrey;
+      border: 1px solid rgb(199, 196, 196);
+    }
+    // border: 1px solid blue;
+  }
+}
