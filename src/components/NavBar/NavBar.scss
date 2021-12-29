@@ -1,35 +1,37 @@
-@use '../../styles/variables.scss' as v;
-.navWrap {
-  background-color: black;
+@use '../../styles/variables.scss' as variable;
+.NavBar {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
+  background-color: black;
+
   .navInside {
     display: flex;
-    width: 1500px;
-
-    color: v.$pointColor;
-
     justify-content: space-between;
+    width: 1500px;
     height: 40px;
+    color: variable.$pointColor;
+
     h1 {
-      color: v.$pointColor;
+      color: variable.$pointColor;
+
       span {
-        color: v.$whiteColor;
+        color: variable.$whiteColor;
       }
     }
+
     button {
-      background-color: v.$whiteColor;
-      // border: 1px solid;
-      border-radius: 3px;
       width: 150px;
       height: 40px;
-      font-size: 18px;
       margin-left: 10px;
+      background-color: variable.$whiteColor;
+      border-radius: 3px;
+      font-size: 18px;
     }
+
     button:hover {
-      background-color: v.$pointColor;
+      background-color: variable.$pointColor;
       color: white;
     }
   }
