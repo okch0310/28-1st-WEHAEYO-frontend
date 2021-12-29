@@ -1,6 +1,6 @@
 import MenuReviewTab from './MenuReviewTab';
+import Menus from './Menus';
 import RestaurantInfo from './RestaurantInfo';
-import SignatureMenu from './SignatureMenu';
 
 export default function RestaurantDetail() {
   return (
@@ -8,9 +8,7 @@ export default function RestaurantDetail() {
       <main>
         <RestaurantInfo />
         <MenuReviewTab />
-        <div className="content">
-          <SignatureMenu />
-        </div>
+        <Menus />
       </main>
     </div>
   );
