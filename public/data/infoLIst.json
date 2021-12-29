@@ -1,37 +1,37 @@
 [
   {
-    "id": 1,
-    "Resname": "wecode1",
-    "rates": 1000,
-    "reviews": 1000,
-    "image": "test1"
+    "Res_id": 1,
+    "Res_name": "wecode1",
+    "Rates": "1000점",
+    "Reviews": "1000개",
+    "Res_img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201103134054_kr.jpg?type=thumb&opt=R329x247@2xa"
   },
   {
-    "id": 2,
-    "Resname": "wecode2",
-    "rates": 1200,
-    "reviews": 2000,
-    "image": "test2"
+    "Res_id": 2,
+    "Res_name": "wecode2",
+    "Rates": "1200점",
+    "Reviews": "2000개",
+    "Res_img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201106164745_kr.jpg?type=thumb&opt=R329x247@2xa"
   },
   {
-    "id": 3,
-    "Resname": "wecode3",
-    "rates": 1400,
-    "reviews": 3000,
-    "image": "test3"
+    "Res_id": 3,
+    "Res_name": "wecode3",
+    "Rates": "1400점",
+    "Reviews": "3000개",
+    "Res_img": "https://t1.daumcdn.net/friends/prod/product/20201020152815054_8809721505908_AW_00.jpg?type=thumb&opt=R103x103@2xa"
   },
   {
-    "id": 4,
-    "Resname": "wecode4",
-    "rates": 1600,
-    "reviews": 4000,
-    "image": "test4"
+    "Res_id": 4,
+    "Res_name": "wecode4",
+    "Rates": "1600점",
+    "Reviews": "4000개",
+    "Res_img": "https://t1.daumcdn.net/friends/prod/product/20201020152905998_8809721505922_AW_00.jpg?type=thumb&opt=R103x103@2xa"
   },
   {
-    "id": 5,
-    "Resname": "wecode5",
-    "rates": 1800,
-    "reviews": 5000,
-    "image": "test5"
+    "Res_id": 5,
+    "Res_name": "wecode5",
+    "Rates": "1800점",
+    "Reviews": "5000개",
+    "Res_img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa"
   }
 ]
