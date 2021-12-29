@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "Resname": "wecode1",
+    "rates": 1000,
+    "reviews": 1000,
+    "image": "test1"
+  },
+  {
+    "id": 2,
+    "Resname": "wecode2",
+    "rates": 1200,
+    "reviews": 2000,
+    "image": "test2"
+  },
+  {
+    "id": 3,
+    "Resname": "wecode3",
+    "rates": 1400,
+    "reviews": 3000,
+    "image": "test3"
+  },
+  {
+    "id": 4,
+    "Resname": "wecode4",
+    "rates": 1600,
+    "reviews": 4000,
+    "image": "test4"
+  },
+  {
+    "id": 5,
+    "Resname": "wecode5",
+    "rates": 1800,
+    "reviews": 5000,
+    "image": "test5"
+  }
+]
