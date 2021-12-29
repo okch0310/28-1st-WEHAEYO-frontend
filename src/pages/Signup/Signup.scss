@@ -26,13 +26,13 @@
       border: 1px solid lightgray;
     }
 
-    .inqueryBox {
+    .searchBoxWrap {
       height: 50px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      .inquery {
+      .searchBox {
         height: 20px;
       }
     }

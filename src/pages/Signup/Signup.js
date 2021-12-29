@@ -6,6 +6,7 @@ export default function Signup() {
   const [id, setId] = useState('');
   const [pw, setPw] = useState('');
   const [btn, setBtn] = useState(false);
+  //useState 추가
 
   function handleIdInput(e) {
     setId(e.target.value);
@@ -30,12 +31,38 @@ export default function Signup() {
     // .then(result => console.log('결과: ', result)); //result 실제 데이터가 객체 형식으로 출력
   }
 */
+  /*
+  function requestSignUp() {
+    fetch('fdf', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: name,
+        phone_number: phone,
+        email: id,
+        password: pw,
+      }),
+    }).then(response=>response.json());
+      .then(result => console.log('결과: ', result));
+  }
+  */
 
   return (
     <div className="login_wrap">
       <div className="login_inside">
         <div className="login_title">WE해요</div>
         <div className="loginForm">
+          <input
+            className="inputBox"
+            type="text"
+            placeholder="이름"
+            onChange={e => handleIdInput(e)}
+          />
+          <input
+            className="inputBox"
+            type="text"
+            placeholder="전화번호 (ex:010-1234-5678)"
+            onChange={e => handleIdInput(e)}
+          />
           <input
             className="inputBox"
             type="text"
@@ -48,11 +75,12 @@ export default function Signup() {
             placeholder="비밀번호"
             onChange={e => handlePwInput(e)}
           />
-          <div className="inqueryBox">
+
+          <div className="searchBoxWrap">
             <span>
               <Link to="/login">로그인 하기</Link>
             </span>
-            <span className="inquery">
+            <span className="searchBox">
               <Link to="/">아이디 찾기</Link>|<Link to="/">비밀번호 찾기</Link>
             </span>
           </div>
@@ -60,7 +88,7 @@ export default function Signup() {
             className={btn ? 'btnOn' : 'btnOff'}
             //onClick={requestLogin}
           >
-            회
+            회원가입
           </button>
         </div>
       </div>
