@@ -1,6 +1,7 @@
 import MenuReviewTab from './MenuReviewTab';
 import Menus from './Menus';
 import RestaurantInfo from './RestaurantInfo';
+import Reviews from './Reviews';
 
 export default function RestaurantDetail() {
   return (
@@ -8,7 +9,8 @@ export default function RestaurantDetail() {
       <main>
         <RestaurantInfo />
         <MenuReviewTab />
-        <Menus />
+        {/* <Menus /> */}
+        <Reviews />
       </main>
     </div>
   );
