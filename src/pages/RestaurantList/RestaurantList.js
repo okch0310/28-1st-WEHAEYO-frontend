@@ -7,22 +7,21 @@ export default function RestaurantList() {
   const [restaurants, setRestaurants] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/data/infoList.json')
+    fetch('/data/infoList.json')
       .then(res => res.json())
       .then(result => setRestaurants(result));
   }, []);
 
   return (
-    <div className="restaurantName">
+    <div className="RestaurantList">
       {restaurants.map(restaurant => {
         return (
           <Restaurant
-            key={restaurant.Res_id}
-            Res_img={restaurant.Res_img}
-            Res_name={restaurant.Res_name}
-            Rates={restaurant.Rates}
-            Reviews={restaurant.Reviews}
-            Reviews={restaurant.Reviews}
+            key={restaurant.resId}
+            resImg={restaurant.resImg}
+            resName={restaurant.resName}
+            resRates={restaurant.resRates}
+            resReviews={restaurant.resReviews}
           />
         );
       })}

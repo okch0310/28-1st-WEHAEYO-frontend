@@ -1,10 +1,14 @@
-.List_Container {
+.Restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid black;
   height: 200px;
   width: 300px;
+  margin: 20px;
 }
 
-.List_Img img {
+.listImg img {
   width: 280px;
   height: 150px;
 }

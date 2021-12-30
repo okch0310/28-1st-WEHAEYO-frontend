@@ -1,37 +1,37 @@
 [
   {
-    "Res_id": 1,
-    "Res_name": "wecode1",
-    "Rates": "1000점",
-    "Reviews": "1000개",
-    "Res_img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201103134054_kr.jpg?type=thumb&opt=R329x247@2xa"
+    "resId": 1,
+    "resName": "wecode1",
+    "resRates": "1000점",
+    "resReviews": "1000개",
+    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201103134054_kr.jpg?type=thumb&opt=R329x247@2xa"
   },
   {
-    "Res_id": 2,
-    "Res_name": "wecode2",
-    "Rates": "1200점",
-    "Reviews": "2000개",
-    "Res_img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201106164745_kr.jpg?type=thumb&opt=R329x247@2xa"
+    "resId": 2,
+    "resName": "wecode2",
+    "resRates": "1200점",
+    "resReviews": "2000개",
+    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201106164745_kr.jpg?type=thumb&opt=R329x247@2xa"
   },
   {
-    "Res_id": 3,
-    "Res_name": "wecode3",
-    "Rates": "1400점",
-    "Reviews": "3000개",
-    "Res_img": "https://t1.daumcdn.net/friends/prod/product/20201020152815054_8809721505908_AW_00.jpg?type=thumb&opt=R103x103@2xa"
+    "resId": 3,
+    "resName": "wecode3",
+    "resRates": "1400점",
+    "resReviews": "3000개",
+    "resImg": "https://t1.daumcdn.net/friends/prod/product/20201020152815054_8809721505908_AW_00.jpg?type=thumb&opt=R103x103@2xa"
   },
   {
-    "Res_id": 4,
-    "Res_name": "wecode4",
-    "Rates": "1600점",
-    "Reviews": "4000개",
-    "Res_img": "https://t1.daumcdn.net/friends/prod/product/20201020152905998_8809721505922_AW_00.jpg?type=thumb&opt=R103x103@2xa"
+    "resId": 4,
+    "resName": "wecode4",
+    "resRates": "1600점",
+    "resReviews": "4000개",
+    "resImg": "https://t1.daumcdn.net/friends/prod/product/20201020152905998_8809721505922_AW_00.jpg?type=thumb&opt=R103x103@2xa"
   },
   {
-    "Res_id": 5,
-    "Res_name": "wecode5",
-    "Rates": "1800점",
-    "Reviews": "5000개",
-    "Res_img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa"
+    "resId": 5,
+    "resName": "wecode5",
+    "resRates": "1800점",
+    "resReviews": "5000개",
+    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa"
   }
 ]
