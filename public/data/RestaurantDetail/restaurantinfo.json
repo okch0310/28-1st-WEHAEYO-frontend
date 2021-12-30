@@ -1,0 +1,96 @@
+{
+  "id": 1,
+  "title": "맥도날드 선릉점",
+  "address": "서울시 강남구 선릉1로 104",
+  "phone": "02-172-2847",
+  "rating": 1.5,
+  "image": "macdonalds.png",
+  "signature_menu": [
+    {
+      "id": 1,
+      "menu_title": "빅맥",
+      "price": 5000,
+      "menu_image": "bigmac.png"
+    },
+    {
+      "id": 2,
+      "menu_title": "리치포테이토버거",
+      "price": 8500,
+      "menu_image": "richpotatoburger.png"
+    },
+    {
+      "id": 3,
+      "menu_title": "트리플치즈버거",
+      "price": 6500,
+      "menu_image": "triplecheeseburger.png"
+    },
+    {
+      "id": 4,
+      "menu_title": "빅맥",
+      "price": 5000,
+      "menu_image": "bigmac.png"
+    },
+    {
+      "id": 5,
+      "menu_title": "리치포테이토버거",
+      "price": 8500,
+      "menu_image": "richpotatoburger.png"
+    },
+    {
+      "id": 6,
+      "menu_title": "트리플치즈버거",
+      "price": 6500,
+      "menu_image": "triplecheeseburger.png"
+    },
+    {
+      "id": 7,
+      "menu_title": "빅맥",
+      "price": 5000,
+      "menu_image": "bigmac.png"
+    }
+  ],
+  "category": [
+    {
+      "category_id": 1,
+      "category_name": "햄버거",
+      "food": [
+        {
+          "id": 1,
+          "menu_title": "빅맥",
+          "price": 5000,
+          "menu_image": "bigmac.png"
+        },
+        {
+          "id": 2,
+          "menu_title": "리치포테이토버거",
+          "price": 8500,
+          "menu_image": "richpotatoburger.png"
+        },
+        {
+          "id": 3,
+          "menu_title": "트리플치즈버거",
+          "price": 6500,
+          "menu_image": "triplecheeseburger.png"
+        }
+      ]
+    },
+    {
+      "category_id": 2,
+      "category_name": "사이드",
+      "food": [
+        {
+          "id": 1,
+          "menu_title": "감자튀김",
+          "price": 1000,
+          "menu_image": "frenchfries.png"
+        },
+        {
+          "id": 2,
+          "menu_title": "아이스크림",
+          "price": 1500,
+          "menu_image": "icecream.png"
+        }
+      ]
+    }
+  ]
+}

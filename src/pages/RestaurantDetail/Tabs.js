@@ -1,6 +1,6 @@
-export default function MenuReviewTab() {
+export default function Tabs() {
   return (
-    <div className="menu_review_tab">
+    <div className="tabs">
       <ul>
         <li className="active">메뉴</li>
         <li>리뷰</li>

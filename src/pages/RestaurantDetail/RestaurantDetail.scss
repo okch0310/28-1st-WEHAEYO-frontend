@@ -1,13 +1,15 @@
 @use '../../styles/variables.scss' as v;
+@use '../../styles/mixin.scss' as m;
 
 .restaurant_detail {
+  @include m.widthHeight;
   background-color: v.$bgColor;
 
   main {
     max-width: 1020px;
     margin: 0 auto;
 
-    section {
+    section.restaurant_info {
       padding-bottom: 18px;
       display: flex;
 
@@ -16,7 +18,7 @@
         border-radius: 10%;
       }
 
-      .restaurant_info {
+      .info {
         padding-left: 1rem;
 
         p {
@@ -28,8 +30,8 @@
       }
     }
 
-    .menu_review_tab {
-      margin-bottom: 1rem;
+    .tabs {
+      padding-bottom: 1rem;
 
       ul {
         display: flex;
@@ -52,7 +54,7 @@
 
     .menus {
       .signature_menu {
-        margin-bottom: 1rem;
+        padding-bottom: 1rem;
 
         ul {
           display: flex;
@@ -86,6 +88,8 @@
       }
 
       .menu {
+        padding-bottom: 1rem;
+
         .menu_category {
           height: 40px;
           padding-left: 1rem;

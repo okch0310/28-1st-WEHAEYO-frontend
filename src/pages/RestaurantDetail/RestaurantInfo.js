@@ -3,26 +3,32 @@ import { MdPlace } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import './RestaurantDetail.scss';
 
-export default function RestaurantInfo() {
+export default function RestaurantInfo({
+  title,
+  image,
+  address,
+  phone,
+  rating,
+}) {
   return (
-    <section>
-      <img alt="맥도날드 선릉점" src="images/RestaurantDetail/macdonalds.png" />
-      <div className="restaurant_info">
-        <h1>맥도날드 선릉점</h1>
+    <section className="restaurant_info">
+      <img alt={`${title}`} src={`images/RestaurantDetail/${image}`} />
+      <div className="info">
+        <h1>{title}</h1>
         <p className="stars">
           <ImStarFull />
           <ImStarHalf />
           <ImStarEmpty />
           <ImStarEmpty />
           <ImStarEmpty />
-          1.5점
+          {rating}점
         </p>
         <p>리뷰 15개</p>
         <p>
-          <MdPlace /> 서울시 강남구 선릉1로 104
+          <MdPlace /> {address}
         </p>
         <p>
-          <BsFillTelephoneFill /> 02-172-2847
+          <BsFillTelephoneFill /> {phone}
         </p>
       </div>
     </section>
