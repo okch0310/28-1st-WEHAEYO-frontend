@@ -14,19 +14,26 @@ export default function RestaurantList() {
 
   return (
     <div className="RestaurantList">
-      {restaurants.map(restaurant => {
-        return (
-          <Restaurant
-            key={restaurant.resId}
-            resImg={restaurant.resImg}
-            resName={restaurant.resName}
-            resRates={restaurant.resRates}
-            resReviews={restaurant.resReviews}
-            resAddress={restaurant.resAddress}
-            resTelephone={restaurant.resTelephone}
-          />
-        );
-      })}
+      <select className="selectOption">
+        <option value="">--Please choose an option--</option>
+        <option value="ratingStars">별점 순으로</option>
+        <option value="reviewsNumbers">리뷰 많은 순으로</option>
+      </select>
+      <div className="restaurantListMain">
+        {restaurants.map(restaurant => {
+          return (
+            <Restaurant
+              key={restaurant.resId}
+              resImg={restaurant.resImg}
+              resName={restaurant.resName}
+              resRates={restaurant.resRates}
+              resReviews={restaurant.resReviews}
+              resAddress={restaurant.resAddress}
+              resTelephone={restaurant.resTelephone}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
