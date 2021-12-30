@@ -7,15 +7,18 @@
   width: auto;
   margin: 20px;
   padding: auto;
+  cursor: pointer;
 
-  .listMain {
-    padding: 10px;
-  }
   .listImg img {
     width: 100%;
     height: 150px;
   }
-  .reviewNumber:before {
-    content: '|';
+
+  .listMain {
+    padding: 10px;
+
+    .reviewNumber:before {
+      content: '|';
+    }
   }
 }
