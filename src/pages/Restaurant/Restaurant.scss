@@ -2,13 +2,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid black;
-  height: 200px;
-  width: 300px;
+  border: 1px dotted black;
+  height: auto;
+  width: auto;
   margin: 20px;
+  padding: auto;
+
+  .listMain {
+    padding: 10px;
+  }
+  .listImg img {
+    width: 100%;
+    height: 150px;
+  }
 }
 
-.listImg img {
-  width: 280px;
-  height: 150px;
+.reviewNumber:before {
+  content: '|';
 }

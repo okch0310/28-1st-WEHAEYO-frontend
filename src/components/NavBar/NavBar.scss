@@ -1,0 +1,38 @@
+@use '../../styles/variables.scss' as variable;
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: black;
+
+  .navInside {
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+    height: 40px;
+    color: variable.$pointColor;
+
+    h1 {
+      color: variable.$pointColor;
+
+      span {
+        color: variable.$whiteColor;
+      }
+    }
+
+    button {
+      width: 150px;
+      height: 40px;
+      margin-left: 10px;
+      background-color: variable.$whiteColor;
+      border-radius: 3px;
+      font-size: 18px;
+    }
+
+    button:hover {
+      background-color: variable.$pointColor;
+      color: white;
+    }
+  }
+}

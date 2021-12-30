@@ -22,6 +22,8 @@ export default function RestaurantList() {
             resName={restaurant.resName}
             resRates={restaurant.resRates}
             resReviews={restaurant.resReviews}
+            resAddress={restaurant.resAddress}
+            resTelephone={restaurant.resTelephone}
           />
         );
       })}
