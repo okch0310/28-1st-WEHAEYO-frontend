@@ -16,9 +16,12 @@
 
   .listMain {
     padding: 10px;
-
+    .iconStar {
+      color: #ffa800;
+    }
     .reviewNumber:before {
       content: '|';
+      margin: 5px;
     }
   }
 }
