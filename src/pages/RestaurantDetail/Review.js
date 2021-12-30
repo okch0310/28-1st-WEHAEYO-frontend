@@ -1,14 +1,12 @@
-export default function Review() {
+export default function Review({ name, date, order, rating, comment }) {
   return (
-    <div className="review">
-      <ul>
-        <li>
-          <h4>alsdk님</h4>
-          <div>별점</div>
-          <p>주문내역</p>
-          <p>후기내용</p>
-        </li>
-      </ul>
-    </div>
+    <li>
+      <p className="user">
+        {name}님 <span>{date}</span>
+      </p>
+      <div className="rating">{rating}</div>
+      <p className="order">{order}</p>
+      <p className="comment">{comment}</p>
+    </li>
   );
 }
