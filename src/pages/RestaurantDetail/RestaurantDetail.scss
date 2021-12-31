@@ -44,8 +44,7 @@
           line-height: 40px;
 
           &:hover {
-            color: v.$pointColor;
-            cursor: pointer;
+            @include m.mouseOver;
           }
         }
 
@@ -103,7 +102,7 @@
           position: relative;
 
           &:hover {
-            cursor: pointer;
+            @include m.mouseOver;
           }
 
           span {
@@ -115,13 +114,18 @@
             position: absolute;
             top: 12px;
             right: 1rem;
+            transition: all 0.2s ease-in-out;
+
+            &.collapsed {
+              transform: rotate(180deg);
+            }
           }
         }
 
         .menu_content {
           height: 0;
           overflow: hidden;
-          transition: all 0.2s ease-in-out;
+          transition: all 0.1s ease-in-out;
 
           &.collapsed {
             height: 100%;

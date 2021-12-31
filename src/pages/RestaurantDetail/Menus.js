@@ -9,6 +9,7 @@ export default function Menus({ menus, signature }) {
         return (
           <Menu
             key={menu.category_id}
+            id={menu.category_id}
             category_name={menu.category_name}
             foods={menu.food}
           />

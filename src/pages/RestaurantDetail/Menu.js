@@ -1,17 +1,26 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
-export default function Menu({ category_name, foods }) {
+export default function Menu({ category_name, foods, id }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const toggleCollapsingMenu = () => {
     setIsCollapsed(!isCollapsed);
   };
 
+  useEffect(() => {
+    const isFirstCategory = id === 1;
+    if (isFirstCategory) {
+      setIsCollapsed(true);
+    }
+  }, [id]);
+
   return (
     <div className="menu">
       <div className="menu_category" onClick={toggleCollapsingMenu}>
         <span>{category_name}</span>
-        <MdKeyboardArrowDown />
+        <MdKeyboardArrowDown
+          className={isCollapsed === true ? 'collapsed' : ''}
+        />
       </div>
       <div
         className={
@@ -28,7 +37,7 @@ export default function Menu({ category_name, foods }) {
                 </div>
                 <div className="menu_photo">
                   <img
-                    alt={`${food.menu_title}`}
+                    alt={food.menu_title}
                     src={`images/RestaurantDetail/${food.menu_image}`}
                   />
                 </div>
