@@ -1,12 +1,5 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-$themeColor: #000;
-$bgColor: #fafafa;
-$pointColor: #fa0050;
-$whiteColor: #fff;
-
-@mixin width-height {
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
+body {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }

@@ -67,6 +67,3 @@ export default function Login() {
     </div>
   );
 }
-
-//조건에 따라 로그인 버튼 색깔 바뀌게 해야지
-//back이랑 연결되게 준비해야지
