@@ -26,18 +26,18 @@ export default function RestaurantList() {
       restaurants.sort(function (a, b) {
         // console.log(a.resRates);
         if (a.resRates > b.resRates) {
-          return 1;
+          return -1;
         }
         if (a.resRates < b.resRates) {
-          return -1;
+          return 1;
         }
 
         return 0;
       });
+      let addResult = [...restaurants];
+      setRestaurants(addResult);
     }
     console.log(restaurants);
-    let resultAdd = restaurants;
-    setRestaurants(resultAdd);
   };
 
   return (
