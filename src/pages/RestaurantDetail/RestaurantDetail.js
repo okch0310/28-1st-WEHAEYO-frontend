@@ -38,8 +38,8 @@ export default function RestaurantDetail() {
         />
         {/* 여기부터 아래는 children 사용하여 탭메뉴에서 Menu와 Review 컴포넌트를 각각 보여주도록 할 예정 */}
         <Tabs />
-        {/* <Menus menus={menus.category} signature={menus.signature_menu} /> */}
-        <Reviews reviews={reviews} rating={menus.rating} />
+        <Menus menus={menus.category} signature={menus.signature_menu} />
+        {/* <Reviews reviews={reviews} rating={menus.rating} /> */}
       </main>
     </div>
   );

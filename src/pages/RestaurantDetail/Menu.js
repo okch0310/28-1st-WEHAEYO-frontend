@@ -1,13 +1,23 @@
+import { useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
 export default function Menu({ category_name, foods }) {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  const toggleCollapsingMenu = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
     <div className="menu">
-      <div className="menu_category">
+      <div className="menu_category" onClick={toggleCollapsingMenu}>
         <span>{category_name}</span>
         <MdKeyboardArrowDown />
       </div>
-      <div className="menu_content">
+      <div
+        className={
+          isCollapsed === true ? 'menu_content collapsed' : 'menu_content'
+        }
+      >
         <ul>
           {foods.map(food => {
             return (

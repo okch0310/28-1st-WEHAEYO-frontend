@@ -42,6 +42,11 @@
           border: 1px solid #d9d9d9;
           text-align: center;
           line-height: 40px;
+
+          &:hover {
+            color: v.$pointColor;
+            cursor: pointer;
+          }
         }
 
         .active {
@@ -114,6 +119,14 @@
         }
 
         .menu_content {
+          height: 0;
+          overflow: hidden;
+          transition: all 0.2s ease-in-out;
+
+          &.collapsed {
+            height: 100%;
+          }
+
           ul {
             border: 1px solid #d9d9d9;
             border-top: 0;
