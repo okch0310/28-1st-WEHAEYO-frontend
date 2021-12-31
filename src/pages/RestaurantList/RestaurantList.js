@@ -12,9 +12,37 @@ export default function RestaurantList() {
       .then(result => setRestaurants(result));
   }, []);
 
+  const sortByRates = event => {
+    // // console.log('작동하자');
+    // console.log(event.target);
+    // console.log(event.target.value);
+    // const optionValue = e.value;
+    // console.log(optionValue);
+
+    if (event.target.value === 'ratingStars') {
+      console.log('if문 작동');
+      // console.log(restaurants);
+
+      restaurants.sort(function (a, b) {
+        // console.log(a.resRates);
+        if (a.resRates > b.resRates) {
+          return 1;
+        }
+        if (a.resRates < b.resRates) {
+          return -1;
+        }
+
+        return 0;
+      });
+    }
+    console.log(restaurants);
+    let resultAdd = restaurants;
+    setRestaurants(resultAdd);
+  };
+
   return (
     <div className="RestaurantList">
-      <select className="selectOption">
+      <select className="selectOption" onChange={sortByRates}>
         <option value="">--Please choose an option--</option>
         <option value="ratingStars">별점 순으로</option>
         <option value="reviewsNumbers">리뷰 많은 순으로</option>

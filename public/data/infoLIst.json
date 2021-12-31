@@ -2,7 +2,7 @@
   {
     "resId": 1,
     "resName": "wecode1",
-    "resRates": "1000점",
+    "resRates": 1000,
     "resReviews": "1000개",
     "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201103134054_kr.jpg?type=thumb&opt=R329x247@2xa",
     "resAddress": "위코드시 위해요 1동",
@@ -11,7 +11,7 @@
   {
     "resId": 2,
     "resName": "wecode2",
-    "resRates": "1200점",
+    "resRates": 150,
     "resReviews": "2000개",
     "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201106164745_kr.jpg?type=thumb&opt=R329x247@2xa",
     "resAddress": "위코드시 위해요 2동",
@@ -20,7 +20,7 @@
   {
     "resId": 3,
     "resName": "wecode3",
-    "resRates": "1400점",
+    "resRates": 200,
     "resReviews": "3000개",
     "resImg": "https://t1.daumcdn.net/friends/prod/product/20201020152815054_8809721505908_AW_00.jpg?type=thumb&opt=R103x103@2xa",
     "resAddress": "위코드시 위해요 3동",
@@ -29,7 +29,7 @@
   {
     "resId": 4,
     "resName": "wecode4",
-    "resRates": "1600점",
+    "resRates": 25,
     "resReviews": "4000개",
     "resImg": "https://t1.daumcdn.net/friends/prod/product/20201020152905998_8809721505922_AW_00.jpg?type=thumb&opt=R103x103@2xa",
     "resAddress": "위코드시 위해요 4동",
@@ -38,7 +38,7 @@
   {
     "resId": 5,
     "resName": "wecode5",
-    "resRates": "1800점",
+    "resRates": 30,
     "resReviews": "5000개",
     "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
     "resAddress": "위코드시 위해요 5동",
@@ -47,7 +47,7 @@
   {
     "resId": 6,
     "resName": "wecode6",
-    "resRates": "1801점",
+    "resRates": 40,
     "resReviews": "45000개",
     "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
     "resAddress": "위코드시 위해요 6동",
@@ -56,7 +56,7 @@
   {
     "resId": 7,
     "resName": "wecode7",
-    "resRates": "1802점",
+    "resRates": 500,
     "resReviews": "200개",
     "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
     "resAddress": "위코드시 위해요 7동",
@@ -65,7 +65,7 @@
   {
     "resId": 8,
     "resName": "wecode8",
-    "resRates": "1100점",
+    "resRates": 60,
     "resReviews": "500개",
     "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
     "resAddress": "위코드시 위해요 8동",
@@ -74,7 +74,7 @@
   {
     "resId": 9,
     "resName": "wecode9",
-    "resRates": "100점",
+    "resRates": 70,
     "resReviews": "510개",
     "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
     "resAddress": "위코드시 위해요 9동",
@@ -83,37 +83,10 @@
   {
     "resId": 10,
     "resName": "wecode10",
-    "resRates": "30점",
+    "resRates": 80,
     "resReviews": "10개",
     "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
     "resAddress": "위코드시 위해요 10동",
-    "resTelephone": "000-000-0000"
-  },
-  {
-    "resId": 11,
-    "resName": "wecode11",
-    "resRates": "10점",
-    "resReviews": "5000개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 5동",
-    "resTelephone": "000-000-0000"
-  },
-  {
-    "resId": 12,
-    "resName": "wecode12",
-    "resRates": "70점",
-    "resReviews": "120개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 12동",
-    "resTelephone": "000-000-0000"
-  },
-  {
-    "resId": 13,
-    "resName": "wecode13",
-    "resRates": "18점",
-    "resReviews": "50개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 13동",
     "resTelephone": "000-000-0000"
   }
 ]

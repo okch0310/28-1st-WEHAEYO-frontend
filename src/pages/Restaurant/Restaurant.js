@@ -19,7 +19,7 @@ export default function Restaurant({
 
   return (
     <>
-      <div className="Restaurant" onClick={goToMain}>
+      <div className="restaurant" onClick={goToMain}>
         <div className="listImg">
           <img key={resId} alt="restaurantImage" src={resImg} />
         </div>
