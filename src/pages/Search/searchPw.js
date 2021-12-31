@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './searchPw.scss';
 
 export default function SearchPw() {
@@ -32,9 +31,9 @@ export default function SearchPw() {
 */
 
   return (
-    <div className="login_wrap">
-      <div className="login_inside">
-        <div className="login_title">id 찾기</div>
+    <div className="loginWrap">
+      <div className="loginInside">
+        <div className="loginTitle">비밀번호 찾기</div>
         <div className="loginForm">
           <input
             className="inputBox"
