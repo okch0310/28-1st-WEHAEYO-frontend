@@ -21,11 +21,10 @@
       .info {
         padding-left: 1rem;
 
-        p {
-          &.stars {
-            font-size: 0.8rem;
-            color: #fcb60a;
-          }
+        .stars {
+          height: 20px;
+          font-size: 0.8rem;
+          color: #fcb60a;
         }
       }
     }
