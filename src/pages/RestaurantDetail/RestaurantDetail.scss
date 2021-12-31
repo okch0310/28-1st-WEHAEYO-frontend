@@ -7,10 +7,10 @@
 
   main {
     max-width: 1020px;
-    margin: 0 auto;
+    margin: 1.8rem auto;
 
     section.restaurant_info {
-      padding-bottom: 18px;
+      padding-bottom: 2rem;
       display: flex;
 
       img {
@@ -31,7 +31,7 @@
     }
 
     .tabs {
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
 
       ul {
         display: flex;

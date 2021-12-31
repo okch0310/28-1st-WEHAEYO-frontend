@@ -22,6 +22,11 @@ export default function RestaurantDetail() {
     return () => {};
   }, []);
 
+  const [currentTab, setCurrentTab] = useState(0);
+  const selectTabMenu = idx => {
+    setCurrentTab(idx);
+  };
+
   // if (!menus || !reviews) {
   //   return <h1>Loading...</h1>;
   // }
@@ -37,10 +42,12 @@ export default function RestaurantDetail() {
             phone={menus.phone}
             rating={menus.rating}
           />
-          {/* 여기부터 아래는 children 사용하여 탭메뉴에서 Menu와 Review 컴포넌트를 각각 보여주도록 할 예정 */}
-          <Tabs />
-          <Menus menus={menus.category} signature={menus.signature_menu} />
-          {/* <Reviews reviews={reviews} rating={menus.rating} /> */}
+          <Tabs selectTabMenu={selectTabMenu} currentTab={currentTab} />
+          {currentTab === 0 ? (
+            <Menus menus={menus.category} signature={menus.signature_menu} />
+          ) : (
+            <Reviews reviews={reviews} rating={menus.rating} />
+          )}
         </main>
       )}
     </div>
