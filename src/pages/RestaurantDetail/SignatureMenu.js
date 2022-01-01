@@ -6,7 +6,7 @@ export default function SignatureMenu({ signatures }) {
           return (
             <li key={signature.id}>
               <img
-                alt={`${signature.menu_title}`}
+                alt={signature.menu_title}
                 src={`images/RestaurantDetail/${signature.menu_image}`}
               />
               <div className="menu_info">
