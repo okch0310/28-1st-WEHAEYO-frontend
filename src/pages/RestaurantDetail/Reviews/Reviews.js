@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
-import FullStar from './FullStar';
-import HalfStar from './HalfStar';
-import BlankStar from './BlankStar';
+import FullStar from '../Stars/FullStar';
+import HalfStar from '../Stars/HalfStar';
+import BlankStar from '../Stars/BlankStar';
 import Review from './Review';
 
 export default function Reviews({ reviews, rating }) {

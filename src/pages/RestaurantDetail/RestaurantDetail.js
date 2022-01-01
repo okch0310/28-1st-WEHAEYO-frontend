@@ -1,7 +1,7 @@
 import Tabs from './Tabs';
-import Menus from './Menus';
+import Menus from './Menus/Menus';
 import RestaurantInfo from './RestaurantInfo';
-import Reviews from './Reviews';
+import Reviews from './Reviews/Reviews';
 import { useEffect, useState } from 'react';
 
 export default function RestaurantDetail() {

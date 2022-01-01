@@ -2,9 +2,9 @@ import { useCallback } from 'react';
 import { MdPlace } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import './RestaurantDetail.scss';
-import FullStar from './FullStar';
-import HalfStar from './HalfStar';
-import BlankStar from './BlankStar';
+import FullStar from './Stars/FullStar';
+import HalfStar from './Stars/HalfStar';
+import BlankStar from './Stars/BlankStar';
 
 export default function RestaurantInfo({
   title,
