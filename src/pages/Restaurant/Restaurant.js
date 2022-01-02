@@ -4,6 +4,7 @@ import './Restaurant.scss';
 
 export default function Restaurant({
   resId,
+  resCategory,
   resImg,
   resName,
   resRates,
@@ -26,6 +27,7 @@ export default function Restaurant({
         <div className="listMain">
           <h3>{resName}</h3>
           <div className="resInfo">
+            <p>{resCategory}</p>
             <span className="iconStar">★ 별점: {resRates}</span>
             <span className="reviewNumber">리뷰갯수: {resReviews}</span>
             <p>주소: {resAddress}</p>

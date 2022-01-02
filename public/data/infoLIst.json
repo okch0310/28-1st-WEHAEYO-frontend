@@ -1,6 +1,7 @@
 [
   {
     "resId": 1,
+    "resCategory": "한식",
     "resName": "wecode1",
     "resRates": 1000,
     "resReviews": "1000개",
@@ -10,6 +11,7 @@
   },
   {
     "resId": 2,
+    "resCategory": "한식",
     "resName": "wecode2",
     "resRates": 150,
     "resReviews": "2000개",
@@ -19,6 +21,7 @@
   },
   {
     "resId": 3,
+    "resCategory": "한식",
     "resName": "wecode3",
     "resRates": 200,
     "resReviews": "3000개",
@@ -28,6 +31,7 @@
   },
   {
     "resId": 4,
+    "resCategory": "중식",
     "resName": "wecode4",
     "resRates": 25,
     "resReviews": "4000개",
@@ -37,6 +41,7 @@
   },
   {
     "resId": 5,
+    "resCategory": "중식",
     "resName": "wecode5",
     "resRates": 30,
     "resReviews": "5000개",
@@ -46,6 +51,7 @@
   },
   {
     "resId": 6,
+    "resCategory": "일식",
     "resName": "wecode6",
     "resRates": 40,
     "resReviews": "45000개",
@@ -55,6 +61,7 @@
   },
   {
     "resId": 7,
+    "resCategory": "일식",
     "resName": "wecode7",
     "resRates": 500,
     "resReviews": "200개",
@@ -64,6 +71,7 @@
   },
   {
     "resId": 8,
+    "resCategory": "일식",
     "resName": "wecode8",
     "resRates": 60,
     "resReviews": "500개",
@@ -73,6 +81,7 @@
   },
   {
     "resId": 9,
+    "resCategory": "중식",
     "resName": "wecode9",
     "resRates": 70,
     "resReviews": "510개",
@@ -82,6 +91,7 @@
   },
   {
     "resId": 10,
+    "resCategory": "한식",
     "resName": "wecode10",
     "resRates": 80,
     "resReviews": "10개",

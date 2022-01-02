@@ -15,3 +15,12 @@
     grid-gap: 20px;
   }
 }
+
+.restaurantMenuTap ul li {
+  float: left;
+  margin: 10px;
+  border: solid 1px black;
+}
+.restaurantMenuTap ul li button {
+  width: 120px;
+}
