@@ -1,10 +1,16 @@
+import { useContext, useEffect } from 'react';
+import { ModalContext } from '../modalContext';
+
 export default function SignatureMenu({ signatures }) {
+  let { handleModal } = useContext(ModalContext);
+
+  useEffect(() => {});
   return (
     <div className="signature_menu">
       <ul>
         {signatures.map(signature => {
           return (
-            <li key={signature.id}>
+            <li key={signature.id} onClick={() => handleModal(signature.id)}>
               <img
                 alt={signature.menu_title}
                 src={`images/RestaurantDetail/${signature.menu_image}`}

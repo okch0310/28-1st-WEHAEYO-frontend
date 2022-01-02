@@ -3,6 +3,7 @@ import Menus from './Menus/Menus';
 import RestaurantInfo from './RestaurantInfo';
 import Reviews from './Reviews/Reviews';
 import { useEffect, useState } from 'react';
+import { ModalProvider } from './modalContext';
 
 export default function RestaurantDetail() {
   const [menus, setMenus] = useState();
@@ -44,7 +45,9 @@ export default function RestaurantDetail() {
           />
           <Tabs selectTabMenu={selectTabMenu} currentTab={currentTab} />
           {currentTab === 0 ? (
-            <Menus menus={menus.category} signature={menus.signature_menu} />
+            <ModalProvider>
+              <Menus menus={menus.category} signature={menus.signature_menu} />
+            </ModalProvider>
           ) : (
             <Reviews reviews={reviews} rating={menus.rating} />
           )}
