@@ -33,7 +33,7 @@ export default function Signup() {
 
   
   function requestSignUp() {
-    fetch('https://2681-61-102-158-250.ngrok.io', {
+    fetch('https://2681-61-102-158-250.ngrok.io/users/signup', {
       method: 'POST',
       body: JSON.stringify({
         name: name,
