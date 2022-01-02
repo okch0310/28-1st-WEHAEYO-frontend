@@ -14,7 +14,7 @@ export default function RestaurantList() {
 
   const sortByRates = event => {
     // // console.log('작동하자');
-    // console.log(event.target);
+    console.log(event);
     // console.log(event.target.value);
     // const optionValue = e.value;
     // console.log(optionValue);
@@ -41,12 +41,15 @@ export default function RestaurantList() {
   };
 
   return (
-    <div className="RestaurantList">
+    <div className="restaurantList">
       <select className="selectOption" onChange={sortByRates}>
         <option value="">--Please choose an option--</option>
         <option value="ratingStars">별점 순으로</option>
         <option value="reviewsNumbers">리뷰 많은 순으로</option>
       </select>
+
+      <div className=""></div>
+
       <div className="restaurantListMain">
         {restaurants.map(restaurant => {
           return (
