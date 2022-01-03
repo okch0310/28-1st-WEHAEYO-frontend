@@ -1,10 +1,7 @@
-import { useCallback } from 'react';
+import { RenderStars } from '../../utils/RenderStars';
 import { MdPlace } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import './RestaurantDetail.scss';
-import FullStar from './Stars/FullStar';
-import HalfStar from './Stars/HalfStar';
-import BlankStar from './Stars/BlankStar';
 
 export default function RestaurantInfo({
   title,
@@ -13,30 +10,13 @@ export default function RestaurantInfo({
   phone,
   rating,
 }) {
-  const renderStars = useCallback(() => {
-    const stringRating = rating.toString().split('.');
-    let resultArray = [];
-    for (let i = 0; i < Number(stringRating[0]); i++) {
-      resultArray.push(<FullStar key={i} />);
-    }
-    if (stringRating.length > 1)
-      resultArray.push(<HalfStar key={resultArray.length} />);
-    const resultArrayLength = resultArray.length;
-    if (Number(stringRating[0]) < 5) {
-      for (let j = 0; j < 5 - resultArrayLength; j++) {
-        resultArray.push(<BlankStar key={resultArrayLength + j} />);
-      }
-    }
-    return resultArray;
-  }, [rating]);
-
   return (
     <section className="restaurant_info">
       <img alt={`${title}`} src={`images/RestaurantDetail/${image}`} />
       <div className="info">
         <h1>{title}</h1>
         <div className="stars">
-          {renderStars()}
+          {RenderStars(rating)}
           &nbsp;{rating}점
         </div>
         <p>리뷰 15개</p>

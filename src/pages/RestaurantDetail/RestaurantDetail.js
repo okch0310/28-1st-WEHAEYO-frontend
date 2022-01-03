@@ -8,6 +8,7 @@ import { ModalProvider } from './modalContext';
 export default function RestaurantDetail() {
   const [menus, setMenus] = useState();
   const [reviews, setReviews] = useState([]);
+  const [currentTab, setCurrentTab] = useState(0);
 
   useEffect(() => {
     fetch('/data/RestaurantDetail/restaurantinfo.json')
@@ -23,7 +24,6 @@ export default function RestaurantDetail() {
     return () => {};
   }, []);
 
-  const [currentTab, setCurrentTab] = useState(0);
   const selectTabMenu = idx => {
     setCurrentTab(idx);
   };

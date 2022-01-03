@@ -3,6 +3,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 
 export default function Menu({ category_name, foods, id }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
+
   const toggleCollapsingMenu = () => {
     setIsCollapsed(!isCollapsed);
   };
@@ -10,7 +11,7 @@ export default function Menu({ category_name, foods, id }) {
   useEffect(() => {
     const isFirstCategory = id === 1;
     if (isFirstCategory) {
-      setIsCollapsed(true);
+      setIsCollapsed(isFirstCategory);
     }
   }, [id]);
 
@@ -18,15 +19,9 @@ export default function Menu({ category_name, foods, id }) {
     <div className="menu">
       <div className="menu_category" onClick={toggleCollapsingMenu}>
         <span>{category_name}</span>
-        <MdKeyboardArrowDown
-          className={isCollapsed === true ? 'collapsed' : ''}
-        />
+        <MdKeyboardArrowDown className={isCollapsed ? 'collapsed' : ''} />
       </div>
-      <div
-        className={
-          isCollapsed === true ? 'menu_content collapsed' : 'menu_content'
-        }
-      >
+      <div className={isCollapsed ? 'menu_content collapsed' : 'menu_content'}>
         <ul>
           {foods.map(food => {
             return (

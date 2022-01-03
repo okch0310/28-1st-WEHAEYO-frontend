@@ -4,6 +4,7 @@ export default () => {
   let [isModalOpen, setIsModalOpen] = useState(false);
   let [contentId, setContentId] = useState(0);
   let [modalContent, setModalContent] = useState([]);
+
   let handleModal = contentId => {
     setIsModalOpen(!isModalOpen);
     setContentId(contentId);
