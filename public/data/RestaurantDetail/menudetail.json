@@ -5,15 +5,18 @@
   "options": [
     {
       "option_id": 1,
-      "content": "토마토 추가"
+      "content": "토마토 추가",
+      "price": 900
     },
     {
       "option_id": 2,
-      "content": "양상추 추가"
+      "content": "양상추 추가",
+      "price": 1000
     },
     {
       "option_id": 3,
-      "content": "치즈 추가"
+      "content": "치즈 추가",
+      "price": 1200
     }
   ]
 }
