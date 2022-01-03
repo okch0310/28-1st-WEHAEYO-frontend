@@ -49,7 +49,7 @@ export default function RestaurantDetail() {
               <Menus menus={menus.category} signature={menus.signature_menu} />
             </ModalProvider>
           ) : (
-            <Reviews reviews={reviews} rating={menus.rating} />
+            <Reviews reviews={reviews.reviews} rating={menus.rating} />
           )}
         </main>
       )}

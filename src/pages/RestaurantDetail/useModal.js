@@ -5,16 +5,20 @@ export default () => {
   let [contentId, setContentId] = useState(0);
   let [modalContent, setModalContent] = useState([]);
 
-  let handleModal = contentId => {
-    setIsModalOpen(!isModalOpen);
+  let openModal = contentId => {
+    setIsModalOpen(true);
     setContentId(contentId);
   };
 
+  let closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   useEffect(() => {
-    fetch('/data/RestaurantDetail/restaurantinfo.json')
+    fetch('/data/RestaurantDetail/menudetail.json')
       .then(res => res.json())
       .then(result => setModalContent(result));
   }, [contentId]);
 
-  return { isModalOpen, handleModal, modalContent };
+  return { isModalOpen, openModal, closeModal, modalContent };
 };

@@ -6,9 +6,9 @@ let ModalContext;
 let { Provider } = (ModalContext = createContext());
 
 let ModalProvider = ({ children }) => {
-  let { isModalOpen, handleModal, modalContent } = useModal();
+  let { isModalOpen, openModal, closeModal, modalContent } = useModal();
   return (
-    <Provider value={{ isModalOpen, handleModal, modalContent }}>
+    <Provider value={{ isModalOpen, openModal, closeModal, modalContent }}>
       <Modal />
       {children}
     </Provider>

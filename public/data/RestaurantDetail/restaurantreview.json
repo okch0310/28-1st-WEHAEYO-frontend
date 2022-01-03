@@ -1,50 +1,53 @@
-[
-  {
-    "id": 1,
-    "updated_at": "2021-12-27",
-    "username": "이찬영",
-    "rating": 5,
-    "order": "빅맥",
-    "content": "역시 햄버거는 맥날 빅맥이지"
-  },
-  {
-    "id": 2,
-    "updated_at": "2021-12-26",
-    "username": "이아영",
-    "rating": 1.5,
-    "order": "리치포테이토버거",
-    "content": "햄버거가 다 식어서 왔어요"
-  },
-  {
-    "id": 3,
-    "updated_at": "2021-12-26",
-    "username": "양대영",
-    "rating": 4,
-    "order": "빅맥",
-    "content": "햄맥 최고"
-  },
-  {
-    "id": 4,
-    "updated_at": "2021-12-24",
-    "username": "옥채현",
-    "rating": 3,
-    "order": "트리플치즈버거",
-    "content": "햄버거가 생각보다 커요."
-  },
-  {
-    "id": 5,
-    "updated_at": "2021-12-23",
-    "username": "정민아",
-    "rating": 3.5,
-    "order": "트리플치즈버거",
-    "content": "맛있어요."
-  },
-  {
-    "id": 6,
-    "updated_at": "2021-12-22",
-    "username": "김홍주",
-    "rating": 3,
-    "order": "빅맥",
-    "content": "잘 먹었습니다."
-  }
-]
+{
+  "restaurant_id": 1,
+  "reviews": [
+    {
+      "id": 1,
+      "updated_at": "2021-12-27",
+      "username": "이찬영",
+      "rating": 5,
+      "order": "빅맥",
+      "content": "역시 햄버거는 맥날 빅맥이지"
+    },
+    {
+      "id": 2,
+      "updated_at": "2021-12-26",
+      "username": "이아영",
+      "rating": 1.5,
+      "order": "리치포테이토버거",
+      "content": "햄버거가 다 식어서 왔어요"
+    },
+    {
+      "id": 3,
+      "updated_at": "2021-12-26",
+      "username": "양대영",
+      "rating": 4,
+      "order": "빅맥",
+      "content": "햄맥 최고"
+    },
+    {
+      "id": 4,
+      "updated_at": "2021-12-24",
+      "username": "옥채현",
+      "rating": 3,
+      "order": "트리플치즈버거",
+      "content": "햄버거가 생각보다 커요."
+    },
+    {
+      "id": 5,
+      "updated_at": "2021-12-23",
+      "username": "정민아",
+      "rating": 3.5,
+      "order": "트리플치즈버거",
+      "content": "맛있어요."
+    },
+    {
+      "id": 6,
+      "updated_at": "2021-12-22",
+      "username": "김홍주",
+      "rating": 3,
+      "order": "빅맥",
+      "content": "잘 먹었습니다."
+    }
+  ]
+}

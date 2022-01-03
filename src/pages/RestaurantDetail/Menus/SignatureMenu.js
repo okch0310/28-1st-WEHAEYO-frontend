@@ -2,7 +2,7 @@ import { useContext, useEffect } from 'react';
 import { ModalContext } from '../modalContext';
 
 export default function SignatureMenu({ signatures }) {
-  let { handleModal } = useContext(ModalContext);
+  let { openModal } = useContext(ModalContext);
 
   useEffect(() => {});
   return (
@@ -10,7 +10,7 @@ export default function SignatureMenu({ signatures }) {
       <ul>
         {signatures.map(signature => {
           return (
-            <li key={signature.id} onClick={() => handleModal(signature.id)}>
+            <li key={signature.id} onClick={() => openModal(signature.id)}>
               <img
                 alt={signature.menu_title}
                 src={`images/RestaurantDetail/${signature.menu_image}`}
