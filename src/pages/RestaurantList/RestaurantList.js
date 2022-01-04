@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Restaurant from '../Restaurant/Restaurant';
-import { useParams } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import './RestaurantList.scss';
 import Buttons from '../Restaurant/Buttons';
 
 export default function RestaurantList() {
   const [restaurants, setRestaurants] = useState([]);
-  const params = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`{API}&${queryString}`)
@@ -19,6 +19,8 @@ export default function RestaurantList() {
     const queryString =`keyword=${keyword}`; 
     console.log(keyword);
     console.log(queryString);
+
+    navigate(queryString);
   };
 
   return (
