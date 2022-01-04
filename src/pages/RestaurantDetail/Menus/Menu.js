@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import { ModalContext } from '../modalContext';
 
 export default function Menu({ category_name, foods, id }) {
+  let { openModal } = useContext(ModalContext);
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleCollapsingMenu = () => {
@@ -25,7 +27,7 @@ export default function Menu({ category_name, foods, id }) {
         <ul>
           {foods.map(food => {
             return (
-              <li key={food.id}>
+              <li key={food.id} onClick={openModal}>
                 <div className="menu_title">
                   <h4>{food.menu_title}</h4>
                   <p>{food.price}원</p>
