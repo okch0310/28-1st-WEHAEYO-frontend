@@ -2,12 +2,19 @@ import { useContext, useState } from 'react';
 import { ModalContext } from '../modalContext';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import ModalLayout from './ModalLayout';
+import { useEffect } from 'react/cjs/react.development';
 
 export default function Modal() {
   let { isModalOpen, modalContent } = useContext(ModalContext);
   const [menuAmount, setMenuAmount] = useState(1);
   const [optionPrice, setOptionPrice] = useState(0);
   const [selectedOption, setSelectedOption] = useState(0);
+
+  useEffect(() => {
+    isModalOpen
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'unset');
+  }, [isModalOpen]);
 
   const handleMenuAmount = e => {
     setMenuAmount(e.target.value);
@@ -33,7 +40,7 @@ export default function Modal() {
 
   return (
     <div>
-      {isModalOpen === true && modalContent && (
+      {isModalOpen && modalContent && (
         <ModalLayout>
           <div className="modal_content">
             <div className="modal_menu">

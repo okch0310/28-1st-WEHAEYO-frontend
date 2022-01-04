@@ -1,6 +1,9 @@
 @use '../../styles/variables.scss' as v;
 @use '../../styles/mixin.scss' as m;
 
+#root {
+  position: relative;
+}
 .restaurant_detail {
   @include m.widthHeight;
   background-color: v.$bgColor;
@@ -9,7 +12,6 @@
   main {
     max-width: 1020px;
     margin: 0 auto;
-    position: relative;
 
     // 음식점 정보
     section.restaurant_info {

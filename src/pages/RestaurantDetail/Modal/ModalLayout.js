@@ -5,8 +5,9 @@ import './Modal.scss';
 
 export default function ModalLayout({ children }) {
   let { closeModal } = useContext(ModalContext);
+
   return (
-    <div className="overlay">
+    <div className="overlay" onClick={closeModal}>
       <div className="modal_layout">
         <div className="modal_header">
           <p>메뉴상세</p>
