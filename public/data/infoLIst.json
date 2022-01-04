@@ -1,102 +1,86 @@
 [
   {
-    "resId": 1,
-    "resCategory": "한식",
-    "resName": "wecode1",
-    "resRates": 1000,
-    "resReviews": "1000개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201103134054_kr.jpg?type=thumb&opt=R329x247@2xa",
-    "resAddress": "위코드시 위해요 1동",
-    "resTelephone": "000-000-0000"
+    "id": 1,
+    "category": "한식",
+    "name": "wecode1",
+    "rates": 1000,
+    "reviews": "1000개",
+    "img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201103134054_kr.jpg?type=thumb&opt=R329x247@2xa"
   },
   {
-    "resId": 2,
-    "resCategory": "한식",
-    "resName": "wecode2",
-    "resRates": 150,
-    "resReviews": "2000개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201106164745_kr.jpg?type=thumb&opt=R329x247@2xa",
-    "resAddress": "위코드시 위해요 2동",
-    "resTelephone": "000-000-0000"
+    "id": 2,
+    "category": "한식",
+    "name": "wecode2",
+    "rates": 150,
+    "reviews": "2000개",
+    "img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201106164745_kr.jpg?type=thumb&opt=R329x247@2xa"
   },
   {
-    "resId": 3,
-    "resCategory": "한식",
-    "resName": "wecode3",
-    "resRates": 200,
-    "resReviews": "3000개",
-    "resImg": "https://t1.daumcdn.net/friends/prod/product/20201020152815054_8809721505908_AW_00.jpg?type=thumb&opt=R103x103@2xa",
-    "resAddress": "위코드시 위해요 3동",
-    "resTelephone": "000-000-0000"
+    "id": 3,
+    "category": "한식",
+    "name": "wecode3",
+    "rates": 200,
+    "reviews": "3000개",
+    "img": "https://t1.daumcdn.net/friends/prod/product/20201020152815054_8809721505908_AW_00.jpg?type=thumb&opt=R103x103@2xa",
+    "address": "위코드시 위해요 3동",
+    "telephone": "000-000-0000"
   },
   {
-    "resId": 4,
-    "resCategory": "중식",
-    "resName": "wecode4",
-    "resRates": 25,
-    "resReviews": "4000개",
-    "resImg": "https://t1.daumcdn.net/friends/prod/product/20201020152905998_8809721505922_AW_00.jpg?type=thumb&opt=R103x103@2xa",
-    "resAddress": "위코드시 위해요 4동",
-    "resTelephone": "000-000-0000"
+    "id": 4,
+    "category": "중식",
+    "name": "wecode4",
+    "rates": 25,
+    "reviews": "4000개",
+    "img": "https://t1.daumcdn.net/friends/prod/product/20201020152905998_8809721505922_AW_00.jpg?type=thumb&opt=R103x103@2xa"
   },
   {
-    "resId": 5,
-    "resCategory": "중식",
-    "resName": "wecode5",
-    "resRates": 30,
-    "resReviews": "5000개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 5동",
-    "resTelephone": "000-000-0000"
+    "id": 5,
+    "Category": "중식",
+    "name": "wecode5",
+    "rates": 30,
+    "reviews": "5000개",
+    "img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
+    "address": "위코드시 위해요 5동",
+    "telephone": "000-000-0000"
   },
   {
-    "resId": 6,
-    "resCategory": "일식",
-    "resName": "wecode6",
-    "resRates": 40,
-    "resReviews": "45000개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 6동",
-    "resTelephone": "000-000-0000"
+    "id": 6,
+    "category": "일식",
+    "name": "wecode6",
+    "rates": 40,
+    "reviews": "45000개",
+    "img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa"
   },
   {
-    "resId": 7,
-    "resCategory": "일식",
-    "resName": "wecode7",
-    "resRates": 500,
-    "resReviews": "200개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 7동",
-    "resTelephone": "000-000-0000"
+    "id": 7,
+    "category": "일식",
+    "name": "wecode7",
+    "rates": 500,
+    "reviews": "200개",
+    "img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa"
   },
   {
-    "resId": 8,
-    "resCategory": "일식",
-    "resName": "wecode8",
-    "resRates": 60,
-    "resReviews": "500개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 8동",
-    "resTelephone": "000-000-0000"
+    "id": 8,
+    "category": "일식",
+    "name": "wecode8",
+    "rates": 60,
+    "reviews": "500개",
+    "img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa"
   },
   {
-    "resId": 9,
-    "resCategory": "중식",
-    "resName": "wecode9",
-    "resRates": 70,
-    "resReviews": "510개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 9동",
-    "resTelephone": "000-000-0000"
+    "id": 9,
+    "category": "중식",
+    "name": "wecode9",
+    "rates": 70,
+    "reviews": "510개",
+    "img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa"
   },
   {
-    "resId": 10,
-    "resCategory": "한식",
-    "resName": "wecode10",
-    "resRates": 80,
-    "resReviews": "10개",
-    "resImg": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa",
-    "resAddress": "위코드시 위해요 10동",
-    "resTelephone": "000-000-0000"
+    "id": 10,
+    "category": "한식",
+    "name": "wecode10",
+    "rates": 80,
+    "reviews": "10개",
+    "img": "https://t1.kakaocdn.net/friends/prod/main_tab/home/home_20201111183631_kr.jpg?type=thumb&opt=R335x187@2xa"
   }
 ]
