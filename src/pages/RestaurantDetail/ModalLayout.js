@@ -9,7 +9,9 @@ export default function ModalLayout({ children }) {
       <div className="modal_layout">
         <div className="modal_header">
           <p>메뉴상세</p>
-          <GrClose onClick={closeModal} />
+          <button type="button" onClick={closeModal}>
+            <GrClose />
+          </button>
         </div>
         {children}
         <div className="modal_footer">
