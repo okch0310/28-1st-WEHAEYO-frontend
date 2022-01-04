@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import Restaurant from '../Restaurant/Restaurant';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './RestaurantList.scss';
 import Buttons from '../Restaurant/Buttons';
 
 export default function RestaurantList() {
   const [restaurants, setRestaurants] = useState([]);
   const navigate = useNavigate();
+  const location = useLocation();
 
+  console.log(location);  
+
+  //데이터 로딩
   useEffect(() => {
-    fetch(`{API}&${queryString}`)
+    fetch(`{API}/user${location.search}`)
       .then(res => res.json())
       .then(result => setRestaurants(result));
-  }, []);
+  }, [location.search]);
 
   const updateKeywords = (buttonKeyword) => {
     const keyword = 'buttonKeyword';
