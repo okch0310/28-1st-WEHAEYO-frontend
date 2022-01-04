@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { ModalContext } from './modalContext';
+import { ModalContext } from '../modalContext';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import ModalLayout from './ModalLayout';
 

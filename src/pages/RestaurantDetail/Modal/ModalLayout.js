@@ -1,6 +1,7 @@
 import { useContext } from 'react';
-import { ModalContext } from './modalContext';
+import { ModalContext } from '../modalContext';
 import { GrClose } from 'react-icons/gr';
+import './Modal.scss';
 
 export default function ModalLayout({ children }) {
   let { closeModal } = useContext(ModalContext);

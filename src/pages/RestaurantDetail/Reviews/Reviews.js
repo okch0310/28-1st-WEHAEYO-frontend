@@ -1,5 +1,6 @@
 import { RenderStars } from '../../../utils/RenderStars';
 import Review from './Review';
+import './Reviews.scss';
 
 export default function Reviews({ reviews, rating }) {
   return (

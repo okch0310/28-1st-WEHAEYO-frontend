@@ -1,0 +1,105 @@
+@use '../../../styles/variables.scss' as v;
+@use '../../../styles/mixin.scss' as m;
+
+// 탭 메뉴 - 메뉴
+.menus {
+  .signature_menu {
+    padding-bottom: 1rem;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        border: 1px solid #d9d9d9;
+
+        img {
+          width: 130px;
+          height: 80px;
+          object-fit: cover;
+        }
+
+        .menu_info {
+          width: 130px;
+          padding-left: 0.5rem;
+          padding-top: 0.2rem;
+          padding-bottom: 0.5rem;
+
+          h4 {
+            margin-bottom: 0.3rem;
+          }
+
+          p {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    padding-bottom: 1rem;
+
+    .menu_category {
+      height: 40px;
+      padding-left: 1rem;
+      background-color: v.$themeColor;
+      color: v.$whiteColor;
+      position: relative;
+
+      &:hover {
+        @include m.mouseOver;
+      }
+
+      span {
+        font-size: 1.2rem;
+        line-height: 40px;
+      }
+
+      svg {
+        position: absolute;
+        top: 12px;
+        right: 1rem;
+        transition: all 0.2s ease-in-out;
+
+        &.collapsed {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .menu_content {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.1s ease-in-out;
+
+      &.collapsed {
+        height: 100%;
+      }
+
+      ul {
+        border: 1px solid #d9d9d9;
+        border-top: 0;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 120px;
+          padding: 0.5rem 1rem;
+
+          &:not(:first-child) {
+            border-top: 1px solid #d9d9d9;
+          }
+
+          .menu_photo {
+            img {
+              width: 150px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
