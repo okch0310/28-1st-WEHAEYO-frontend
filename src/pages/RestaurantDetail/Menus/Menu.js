@@ -27,7 +27,7 @@ export default function Menu({ category_name, foods, id }) {
         <ul>
           {foods.map(food => {
             return (
-              <li key={food.id} onClick={openModal}>
+              <li key={food.id} onClick={() => openModal(food.id)}>
                 <div className="menu_title">
                   <h4>{food.menu_title}</h4>
                   <p>{food.price}원</p>
