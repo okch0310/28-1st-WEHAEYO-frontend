@@ -1,11 +1,11 @@
-.login_wrap {
+.loginWrap {
   display: flex;
   justify-content: center;
 
-  .login_inside {
+  .loginInside {
     width: 700px;
 
-    .login_title {
+    .loginTitle {
       display: flex;
       justify-content: center;
       margin-bottom: 10px;
@@ -36,9 +36,13 @@
       }
     }
 
-    .loginBtn {
+    button {
       height: 60px;
       background-color: lightgray;
+
+      &:disabled:hover {
+        cursor: default;
+      }
     }
 
     .btnOn {
