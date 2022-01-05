@@ -3,13 +3,14 @@ import Restaurant from '../Restaurant/Restaurant';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './RestaurantList.scss';
 import Buttons from '../Restaurant/Buttons';
+import SelectBar from '../Restaurant/Selectbar';
 
 export default function RestaurantList() {
   const [restaurants, setRestaurants] = useState([]);
   const navigate = useNavigate();
   const location = useLocation();
 
-  console.log(location);  
+  console.log('location', location);  
 
   //데이터 로딩
   useEffect(() => {
@@ -24,20 +25,26 @@ export default function RestaurantList() {
     console.log(keyword);
     console.log(queryString);
 
-    navigate(queryString);
+    navigate(`/restaurants?keyword=${queryString}`);
+  };
+
+  const updateCategories = (optionKeyword) => {
+    const sortedOption = 'optionKeyword';
+    const sortedqueryString =`sortedOption=${sortedOption}`; 
+    console.log(sortedOption);
+    console.log(sortedqueryString);
+
+    navigate(`/restaurants?keyword=${queryString}&${sortedqueryString}`);
   };
 
   return (
     <div className="restaurantList">
-      <select className="selectOption" onChange={}>
-        <option value="">--Please choose an option--</option>
-        <option value="ratingStars">별점 순으로</option>
-        <option value="reviewsNumbers">리뷰 많은 순으로</option>
-      </select>
+    
 
       <div className="restaurantListMain">
         {restaurants.map(restaurant => {
           return (
+            <SelectBar updateCategories={updateCategories}/>
             <Buttons updateKeywords={updateKeywords}/>
             <Restaurant
               key={restaurant.id}
