@@ -18,7 +18,7 @@ export default function SelectBar({ updateCategories }) {
         <option selected value="all">
           --Please choose an option--
         </option>
-        <option value="ratingStar">별점 순으로</option>
+        <option value="avg_rating">별점 순으로</option>
         <option value="reviews">리뷰 많은 순으로</option>
       </select>
     </div>

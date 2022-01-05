@@ -18,36 +18,37 @@ export default function RestaurantList() {
   useEffect(() => {
     fetch(`http://10.58.0.52:8000/restaurants/list${location.search}`)
       //`{API}/user${location.search}`
-      //백엔드에서 보내는 url: http://10.58.0.52:8000/restaurants/list?category=한식&sort=avg_rating
+      //백엔드에서 보내는 url: http://10.58.0.52:8000/restaurants/list?category=korean&sort=avg_rating
       .then(res => res.json())
       .then(result => setRestaurants(result));
   }, [location.search]);
 
   console.log(restaurants);
   const updateKeywords = buttonKeyword => {
-    //button에서 전달이 된 매개인자를 keyword 변수에 담는다.
+    //button에서 전달이 된 매개인자를 keyword 변수에 담는다. korean, japanese, chinese
     const keyword = buttonKeyword;
     //변수를 활용해서 쿼리스트링 형식으로 만든다.
-    const queryString = `?keyword=${keyword}`;
+    const queryString = `?category=${keyword}`;
     console.log(keyword);
     console.log(queryString);
     //쿼리스트링 url로 이동한다
-    navigate(`/restaurants${queryString}`);
+    navigate(`/restaurants/list${queryString}`);
   };
 
   const updateCategories = optionKeyword => {
     const sortedOption = optionKeyword;
-    const sortedqueryString = `sortedOption=${sortedOption}`;
+    const sortedqueryString = `sort=${sortedOption}`;
     console.log(sortedOption);
     console.log(sortedqueryString);
 
-    navigate(`/restaurants?keyword=${sortedqueryString}&${sortedqueryString}`);
+    navigate(
+      `/restaurants/list?category=${sortedqueryString}&${sortedqueryString}`
+    );
   };
 
-  {
-    restaurants.length > 0 && (
-      <>
-        return (
+  return (
+    <>
+      {restaurants.length > 0 && (
         <div className="restaurantList">
           <div className="restaurantListMain">
             {restaurants.map(restaurant => {
@@ -67,8 +68,7 @@ export default function RestaurantList() {
             })}
           </div>
         </div>
-        )
-      </>
-    );
-  }
+      )}
+    </>
+  );
 }
