@@ -23,7 +23,7 @@ export default function RestaurantList() {
 
   const updateKeywords = buttonKeyword => {
     //button에서 전달이 된 매개인자를 keyword 변수에 담는다.
-    const keyword = 'buttonKeyword';
+    const keyword = buttonKeyword;
     //변수를 활용해서 쿼리스트링 형식으로 만든다.
     const queryString = `?keyword=${keyword}`;
     console.log(keyword);
@@ -33,7 +33,7 @@ export default function RestaurantList() {
   };
 
   const updateCategories = optionKeyword => {
-    const sortedOption = 'optionKeyword';
+    const sortedOption = optionKeyword;
     const sortedqueryString = `sortedOption=${sortedOption}`;
     console.log(sortedOption);
     console.log(sortedqueryString);
