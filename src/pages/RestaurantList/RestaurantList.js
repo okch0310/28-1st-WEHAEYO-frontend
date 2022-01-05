@@ -29,7 +29,7 @@ export default function RestaurantList() {
     console.log(keyword);
     console.log(queryString);
     //쿼리스트링 url로 이동한다
-    navigate(`/restaurants?keyword=${queryString}`);
+    navigate(`/restaurants${queryString}`);
   };
 
   const updateCategories = optionKeyword => {
