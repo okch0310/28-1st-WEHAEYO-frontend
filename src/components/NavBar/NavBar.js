@@ -3,8 +3,8 @@ import './NavBar.scss';
 
 export default function NavBar() {
   return (
-    <div className="nav_wrap">
-      <div className="nav_inside">
+    <div className="NavBar">
+      <div className="navInside">
         <h1>
           WE<span>해요</span>
         </h1>
