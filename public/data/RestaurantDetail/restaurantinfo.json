@@ -1,52 +1,52 @@
 {
   "id": 1,
-  "title": "맥도날드 선릉점",
+  "name": "맥도날드 선릉점",
   "address": "서울시 강남구 선릉1로 104",
   "phone": "02-172-2847",
   "rating": 1.5,
-  "image": "macdonalds.png",
+  "restaurant_img": "macdonalds.png",
   "signature_menu": [
     {
       "id": 1,
-      "menu_title": "빅맥",
+      "name": "빅맥",
       "price": 5000,
-      "menu_image": "bigmac.png"
+      "image": "bigmac.png"
     },
     {
       "id": 2,
-      "menu_title": "리치포테이토버거",
+      "name": "리치포테이토버거",
       "price": 8500,
-      "menu_image": "richpotatoburger.png"
+      "image": "richpotatoburger.png"
     },
     {
       "id": 3,
-      "menu_title": "트리플치즈버거",
+      "name": "트리플치즈버거",
       "price": 6500,
-      "menu_image": "triplecheeseburger.png"
+      "image": "triplecheeseburger.png"
     },
     {
       "id": 4,
-      "menu_title": "빅맥",
+      "name": "빅맥",
       "price": 5000,
-      "menu_image": "bigmac.png"
+      "image": "bigmac.png"
     },
     {
       "id": 5,
-      "menu_title": "리치포테이토버거",
+      "name": "리치포테이토버거",
       "price": 8500,
-      "menu_image": "richpotatoburger.png"
+      "image": "richpotatoburger.png"
     },
     {
       "id": 6,
-      "menu_title": "트리플치즈버거",
+      "name": "트리플치즈버거",
       "price": 6500,
-      "menu_image": "triplecheeseburger.png"
+      "image": "triplecheeseburger.png"
     },
     {
       "id": 7,
-      "menu_title": "빅맥",
+      "name": "빅맥",
       "price": 5000,
-      "menu_image": "bigmac.png"
+      "image": "bigmac.png"
     }
   ],
   "category": [
@@ -56,21 +56,21 @@
       "food": [
         {
           "id": 1,
-          "menu_title": "빅맥",
+          "name": "빅맥",
           "price": 5000,
-          "menu_image": "bigmac.png"
+          "image": "bigmac.png"
         },
         {
           "id": 2,
-          "menu_title": "리치포테이토버거",
+          "name": "리치포테이토버거",
           "price": 8500,
-          "menu_image": "richpotatoburger.png"
+          "image": "richpotatoburger.png"
         },
         {
           "id": 3,
-          "menu_title": "트리플치즈버거",
+          "name": "트리플치즈버거",
           "price": 6500,
-          "menu_image": "triplecheeseburger.png"
+          "image": "triplecheeseburger.png"
         }
       ]
     },
@@ -80,15 +80,15 @@
       "food": [
         {
           "id": 1,
-          "menu_title": "감자튀김",
+          "name": "감자튀김",
           "price": 1000,
-          "menu_image": "frenchfries.png"
+          "image": "frenchfries.png"
         },
         {
           "id": 2,
-          "menu_title": "아이스크림",
+          "name": "아이스크림",
           "price": 1500,
-          "menu_image": "icecream.png"
+          "image": "icecream.png"
         }
       ]
     }

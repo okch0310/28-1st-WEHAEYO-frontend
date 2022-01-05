@@ -34,8 +34,8 @@ export default function RestaurantDetail() {
       {menus && reviews && (
         <main>
           <RestaurantInfo
-            title={menus.title}
-            image={menus.image}
+            title={menus.name}
+            image={menus.restaurant_img}
             address={menus.address}
             phone={menus.phone}
             rating={menus.rating}

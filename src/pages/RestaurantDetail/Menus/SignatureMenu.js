@@ -43,11 +43,11 @@ export default function SignatureMenu({ signatures }) {
               onClick={() => openModal(signature.id)}
             >
               <img
-                alt={signature.menu_title}
-                src={`images/RestaurantDetail/${signature.menu_image}`}
+                alt={signature.name}
+                src={`images/RestaurantDetail/${signature.image}`}
               />
               <div className="menu_info">
-                <p>{signature.menu_title}</p>
+                <p>{signature.name}</p>
                 <p>{signature.price}원</p>
               </div>
             </li>
