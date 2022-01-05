@@ -7,7 +7,8 @@ export default function ModalLayout({ children }) {
   let { closeModal } = useContext(ModalContext);
 
   return (
-    <div className="overlay" onClick={closeModal}>
+    <>
+      <div className="overlay" onClick={closeModal} />
       <div className="modal_layout">
         <div className="modal_header">
           <p>메뉴상세</p>
@@ -23,6 +24,6 @@ export default function ModalLayout({ children }) {
           <button type="button">장바구니에 담기</button>
         </div>
       </div>
-    </div>
+    </>
   );
 }

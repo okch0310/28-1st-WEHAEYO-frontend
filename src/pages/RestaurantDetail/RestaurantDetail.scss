@@ -1,9 +1,6 @@
 @use '../../styles/variables.scss' as v;
 @use '../../styles/mixin.scss' as m;
 
-#root {
-  position: relative;
-}
 .restaurant_detail {
   @include m.widthHeight;
   background-color: v.$bgColor;

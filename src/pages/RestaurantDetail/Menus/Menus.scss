@@ -4,14 +4,22 @@
 // 탭 메뉴 - 메뉴
 .menus {
   .signature_menu {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
 
     ul {
+      margin: 0 auto;
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      vertical-align: middle;
 
       li {
-        border: 1px solid #d9d9d9;
+        border: 1px solid v.$themeColor;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
 
         &:hover {
           cursor: pointer;
@@ -27,16 +35,51 @@
           width: 130px;
           padding-left: 0.5rem;
           padding-top: 0.2rem;
-          padding-bottom: 0.5rem;
-
-          h4 {
-            margin-bottom: 0.3rem;
-          }
+          padding-bottom: 0.4rem;
 
           p {
-            font-size: 0.875rem;
+            &:first-child {
+              display: block;
+              margin-bottom: 0.2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              -o-text-overflow: ellipsis;
+              -ms-text-overflow: ellipsis;
+              font-size: 1.05rem;
+              font-weight: 600;
+            }
+
+            &:last-child {
+              font-size: 0.875rem;
+            }
           }
         }
+      }
+    }
+
+    button {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: 0 0 5px v.$themeColor;
+      border-radius: 50%;
+
+      &:first-child {
+        left: 5px;
+      }
+
+      &:last-child {
+        right: 5px;
+      }
+
+      svg {
+        width: 22px;
+        height: 22px;
+        border: 1px solid v.$themeColor;
+        border-radius: 50%;
       }
     }
   }
