@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Restaurant.scss';
 
-export default function Restaurant({ category, img, name, rates, reviews }) {
+export default function Restaurant({ image, name, rating, reviews }) {
   const navigate = useNavigate();
   const goToDetail = () => {
     navigate('/restaurants/detail/');
@@ -13,13 +13,12 @@ export default function Restaurant({ category, img, name, rates, reviews }) {
     <>
       <div className="restaurant" onClick={goToDetail}>
         <div className="listImg">
-          <img alt="restaurantImage" src={img} />
+          <img alt="restaurantImage" src={image} />
         </div>
         <div className="listMain">
           <h2>{name}</h2>
           <div className="resInfo">
-            <p>{category}</p>
-            <span className="iconStar">★ 별점: {rates}</span>
+            <span className="iconStar">★ 별점: {rating}</span>
             <span className="reviewNumber">리뷰갯수: {reviews}</span>
           </div>
         </div>

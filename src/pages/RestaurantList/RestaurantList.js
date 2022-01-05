@@ -3,7 +3,7 @@ import Restaurant from '../Restaurant/Restaurant';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './RestaurantList.scss';
 import Buttons from '../Restaurant/Buttons';
-import SelectBar from '../Restaurant/Selectbar';
+import SelectBar from '../Restaurant/SelectBar';
 
 export default function RestaurantList() {
   const [restaurants, setRestaurants] = useState([]);
@@ -16,7 +16,10 @@ export default function RestaurantList() {
   //데이터 로딩
   //쿼리스트링 주소가 담김 url을 받아오게 된다(`{API}/user${location.search}`)
   useEffect(() => {
-    fetch(`{API}/user${location.search}`)
+    fetch(
+      `http://10.58.0.52:8000/restaurants/list?category=한식&sort=avg_rating`
+    )
+      //`{API}/user${location.search}`
       .then(res => res.json())
       .then(result => setRestaurants(result));
   }, [location.search]);
@@ -38,7 +41,7 @@ export default function RestaurantList() {
     console.log(sortedOption);
     console.log(sortedqueryString);
 
-    navigate(`/restaurants?keyword=${queryString}&${sortedqueryString}`);
+    navigate(`/restaurants?keyword=${sortedqueryString}&${sortedqueryString}`);
   };
 
   return (
@@ -51,9 +54,9 @@ export default function RestaurantList() {
               <Buttons updateKeywords={updateKeywords} />
               <Restaurant
                 key={restaurant.id}
-                img={restaurant.img}
+                image={restaurant.image}
                 name={restaurant.name}
-                rates={restaurant.rates}
+                rating={restaurant.rating}
                 reviews={restaurant.reviews}
               />
             </>
