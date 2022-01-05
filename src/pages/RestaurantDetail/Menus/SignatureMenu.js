@@ -7,30 +7,29 @@ import {
 
 export default function SignatureMenu({ signatures }) {
   let { openModal } = useContext(ModalContext);
+  const [isValidMoveMenu, setIsValidMoveMenu] = useState(true);
   const menuList = useRef(null);
-  const [currentMenuIdx, setCurrentMenuIdx] = useState(0);
 
   useEffect(() => {
     const sliderBox = menuList.current;
     const imageLiWidth = sliderBox.firstChild.clientWidth;
-    const imageTotalWidth =
-      imageLiWidth * sliderBox.childNodes.length +
-      (sliderBox.childNodes.length - 1) * 20;
-    const moveDistance =
-      (imageTotalWidth - sliderBox.clientWidth) * currentMenuIdx;
+    const imageLiLength = sliderBox.childNodes.length;
+    const imageTotalWidth = imageLiWidth * imageLiLength + imageLiLength * 20;
+    const moveDistance = imageTotalWidth - sliderBox.clientWidth;
 
-    sliderBox.style.transform = `translateX(${-moveDistance}px)`;
-  }, [currentMenuIdx]);
+    if (isValidMoveMenu === false) {
+      sliderBox.style.transform = `translateX(${-moveDistance}px)`;
+    } else {
+      sliderBox.style.transform = `translateX(0)`;
+    }
+  }, [isValidMoveMenu]);
 
   const slideToPrevImage = () => {
-    if (currentMenuIdx > 0) {
-      setCurrentMenuIdx(currentMenuIdx - 1);
-    }
+    if (isValidMoveMenu === false) setIsValidMoveMenu(true);
   };
 
   const slideToNextImage = () => {
-    if (currentMenuIdx < menuList.current.childNodes.length - 1)
-      setCurrentMenuIdx(currentMenuIdx + 1);
+    if (isValidMoveMenu === true) setIsValidMoveMenu(false);
   };
 
   return (
@@ -56,10 +55,18 @@ export default function SignatureMenu({ signatures }) {
         })}
       </ul>
       <div>
-        <button type="button">
-          <IoMdArrowDropleftCircle onClick={slideToPrevImage} />
+        <button
+          type="button"
+          className={isValidMoveMenu ? 'hidden' : ''}
+          onClick={slideToPrevImage}
+        >
+          <IoMdArrowDropleftCircle />
         </button>
-        <button type="button" onClick={slideToNextImage}>
+        <button
+          type="button"
+          className={isValidMoveMenu ? '' : 'hidden'}
+          onClick={slideToNextImage}
+        >
           <IoMdArrowDroprightCircle />
         </button>
       </div>

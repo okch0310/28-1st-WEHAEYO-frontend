@@ -23,7 +23,7 @@ export default function Menu({ category_name, foods, id }) {
         <span>{category_name}</span>
         <MdKeyboardArrowDown className={isCollapsed ? 'collapsed' : ''} />
       </div>
-      <div className={isCollapsed ? 'content collapsed' : 'content'}>
+      <div className={`content ${isCollapsed ? 'collapsed' : ''}`}>
         <ul>
           {foods.map(food => {
             return (

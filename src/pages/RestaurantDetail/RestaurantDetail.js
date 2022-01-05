@@ -14,10 +14,7 @@ export default function RestaurantDetail() {
     fetch('/data/RestaurantDetail/restaurantinfo.json')
       .then(res => res.json())
       .then(result => setMenus(result));
-    return () => {};
-  }, []);
 
-  useEffect(() => {
     fetch('/data/RestaurantDetail/restaurantreview.json')
       .then(res => res.json())
       .then(result => setReviews(result));
