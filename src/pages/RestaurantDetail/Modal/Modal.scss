@@ -56,7 +56,7 @@
   }
 
   .modal_content {
-    .modal_menu {
+    .menu {
       .image_container {
         img {
           width: 400px;
@@ -66,7 +66,7 @@
         }
       }
 
-      .menu_title {
+      .title {
         height: 45px;
         line-height: 45px;
         font-size: 1.5rem;
@@ -75,7 +75,7 @@
         border-bottom: 1px solid #d9d9d9;
       }
 
-      .menu_price {
+      .price {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -84,7 +84,7 @@
       }
     }
 
-    .modal_options {
+    .radio_options {
       ul {
         border-bottom: 1px solid #d9d9d9;
 
@@ -100,13 +100,13 @@
               cursor: pointer;
             }
 
-            .radio_option {
+            .option {
               input {
                 margin-right: 0.6rem;
               }
             }
 
-            .option_price {
+            .price {
               font-size: 0.825rem;
               color: v.$pointColor;
             }
@@ -115,7 +115,7 @@
       }
     }
 
-    .menu_amount {
+    .amount {
       display: flex;
       align-items: center;
       justify-content: space-between;

@@ -43,27 +43,27 @@ export default function Modal() {
       {isModalOpen && modalContent && (
         <ModalLayout>
           <div className="modal_content">
-            <div className="modal_menu">
+            <div className="menu">
               <div className="image_container">
                 <img
                   alt={modalContent.menu_title}
                   src={`images/RestaurantDetail/${modalContent.menu_image}`}
                 />
               </div>
-              <div className="menu_title">{modalContent.menu_title}</div>
-              <div className="menu_price">
+              <div className="title">{modalContent.menu_title}</div>
+              <div className="price">
                 <p>가격</p>
                 <p>{modalContent.menu_price}원</p>
               </div>
             </div>
-            <div className="modal_options">
+            <div className="radio_options">
               <ul>
                 {modalContent.options.length > 0 &&
                   modalContent.options.map(option => {
                     return (
                       <li key={option.option_id}>
                         <label htmlFor={option.option_id}>
-                          <div className="radio_option">
+                          <div className="option">
                             <input
                               type="radio"
                               name="menu_option"
@@ -78,14 +78,14 @@ export default function Modal() {
                             />
                             {option.content}
                           </div>
-                          <div className="option_price">+ {option.price}원</div>
+                          <div className="price">+ {option.price}원</div>
                         </label>
                       </li>
                     );
                   })}
               </ul>
             </div>
-            <div className="menu_amount">
+            <div className="amount">
               <p>수량</p>
               <div>
                 <button

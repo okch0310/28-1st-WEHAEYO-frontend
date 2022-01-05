@@ -87,7 +87,7 @@
   .menu {
     padding-bottom: 1rem;
 
-    .menu_category {
+    .category {
       height: 40px;
       padding-left: 1rem;
       background-color: v.$themeColor;
@@ -115,7 +115,7 @@
       }
     }
 
-    .menu_content {
+    .content {
       height: 0;
       overflow: hidden;
       transition: all 0.1s ease-in-out;
@@ -143,7 +143,7 @@
             cursor: pointer;
           }
 
-          .menu_photo {
+          .photo {
             img {
               width: 150px;
               object-fit: cover;
