@@ -16,14 +16,14 @@ export default function RestaurantList() {
   //데이터 로딩
   //쿼리스트링 주소가 담김 url을 받아오게 된다(`{API}/user${location.search}`)
   useEffect(() => {
-    fetch(
-      `http://10.58.0.52:8000/restaurants/list?category=한식&sort=avg_rating`
-    )
+    fetch(`http://10.58.0.52:8000/restaurants/list${location.search}`)
       //`{API}/user${location.search}`
+      //백엔드에서 보내는 url: http://10.58.0.52:8000/restaurants/list?category=한식&sort=avg_rating
       .then(res => res.json())
       .then(result => setRestaurants(result));
   }, [location.search]);
 
+  console.log(restaurants);
   const updateKeywords = buttonKeyword => {
     //button에서 전달이 된 매개인자를 keyword 변수에 담는다.
     const keyword = buttonKeyword;
@@ -44,25 +44,31 @@ export default function RestaurantList() {
     navigate(`/restaurants?keyword=${sortedqueryString}&${sortedqueryString}`);
   };
 
-  return (
-    <div className="restaurantList">
-      <div className="restaurantListMain">
-        {restaurants.map(restaurant => {
-          return (
-            <>
-              <SelectBar updateCategories={updateCategories} />
-              <Buttons updateKeywords={updateKeywords} />
-              <Restaurant
-                key={restaurant.id}
-                image={restaurant.image}
-                name={restaurant.name}
-                rating={restaurant.rating}
-                reviews={restaurant.reviews}
-              />
-            </>
-          );
-        })}
-      </div>
-    </div>
-  );
+  {
+    restaurants.length > 0 && (
+      <>
+        return (
+        <div className="restaurantList">
+          <div className="restaurantListMain">
+            {restaurants.map(restaurant => {
+              return (
+                <>
+                  <SelectBar updateCategories={updateCategories} />
+                  <Buttons updateKeywords={updateKeywords} />
+                  <Restaurant
+                    key={restaurant.id}
+                    image={restaurant.image}
+                    name={restaurant.name}
+                    rating={restaurant.rating}
+                    reviews={restaurant.reviews}
+                  />
+                </>
+              );
+            })}
+          </div>
+        </div>
+        )
+      </>
+    );
+  }
 }
