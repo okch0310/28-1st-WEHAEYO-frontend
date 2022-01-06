@@ -42,7 +42,7 @@ export default function Signup() {
       }),
     })
       .then(response => response.json())
-      .then(result => console.log('결과: ', result));
+      .then(result => alert('결과: ', result));
   }
 
   return (
