@@ -1,0 +1,64 @@
+.loginWrap {
+  display: flex;
+  justify-content: center;
+
+  .loginInside {
+    width: 700px;
+
+    .loginTitle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      color: red;
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+    .loginForm {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inputBox {
+      height: 70px;
+      padding: 10px 15px;
+      border: 1px solid lightgray;
+    }
+
+    .inqueryBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+
+      .inquery {
+        height: 20px;
+      }
+    }
+
+    button {
+      height: 60px;
+      background-color: lightgray;
+
+      &:disabled:hover {
+        cursor: default;
+      }
+    }
+
+    .btnOn {
+      height: 60px;
+      margin-top: 10px;
+      background-color: red;
+      border: 1px solid rgb(199, 196, 196);
+      border-radius: 3px;
+    }
+
+    .btnOff {
+      height: 60px;
+      margin-top: 10px;
+      background-color: lightgrey;
+      border: 1px solid rgb(199, 196, 196);
+      border-radius: 3px;
+    }
+  }
+}
