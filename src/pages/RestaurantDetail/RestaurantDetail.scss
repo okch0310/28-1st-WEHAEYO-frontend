@@ -6,6 +6,20 @@
   background-color: v.$bgColor;
   padding: 2rem 0;
 
+  .loading {
+    height: 80vh;
+    position: relative;
+
+    img {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   main {
     max-width: 1020px;
     margin: 0 auto;

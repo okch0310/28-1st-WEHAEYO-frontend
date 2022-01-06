@@ -25,31 +25,35 @@ export default function RestaurantDetail() {
     setCurrentTab(idx);
   };
 
-  // if (!menus || !reviews) {
-  //   return <h1>Loading...</h1>;
-  // }
+  if (!menus || !reviews) {
+    return (
+      <div className="restaurant_detail">
+        <div className="loading">
+          <img alt="로딩" src="images/RestaurantDetail/loading.gif" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="restaurant_detail">
-      {menus && reviews && (
-        <main>
-          <RestaurantInfo
-            title={menus.name}
-            image={menus.restaurant_img}
-            address={menus.address}
-            phone={menus.phone}
-            rating={menus.rating}
-          />
-          <Tabs selectTabMenu={selectTabMenu} currentTab={currentTab} />
-          {currentTab === 0 ? (
-            <ModalProvider>
-              <Menus menus={menus.category} signature={menus.signature_menu} />
-            </ModalProvider>
-          ) : (
-            <Reviews reviews={reviews.reviews} rating={menus.rating} />
-          )}
-        </main>
-      )}
+      <main>
+        <RestaurantInfo
+          title={menus.name}
+          image={menus.restaurant_img}
+          address={menus.address}
+          phone={menus.phone}
+          rating={menus.rating}
+        />
+        <Tabs selectTabMenu={selectTabMenu} currentTab={currentTab} />
+        {currentTab === 0 ? (
+          <ModalProvider>
+            <Menus menus={menus.category} signature={menus.signature_menu} />
+          </ModalProvider>
+        ) : (
+          <Reviews reviews={reviews.reviews} rating={menus.rating} />
+        )}
+      </main>
     </div>
   );
 }
