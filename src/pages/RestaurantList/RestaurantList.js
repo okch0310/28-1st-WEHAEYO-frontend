@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import Restaurant from '../Restaurant/Restaurant';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './RestaurantList.scss';
+import Restaurant from '../Restaurant/Restaurant';
 import Buttons from '../Restaurant/Buttons';
 import SelectBar from '../Restaurant/SelectBar';
-// import mixin from '../../styles/mixin.scss';
+import './RestaurantList.scss';
 
 export default function RestaurantList() {
   const [restaurants, setRestaurants] = useState([]);
   const navigate = useNavigate();
   const location = useLocation();
-
   const [selectedKeyword, setKeyword] = useState('');
 
   useEffect(() => {

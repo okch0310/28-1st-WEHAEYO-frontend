@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './SelectBar.scss';
 
-//option에 찍으면 어떻게 처리가 받아오나?
 export default function SelectBar({ updateCategories }) {
   const [selectedOption, setSelectOption] = useState('');
 
