@@ -3,23 +3,21 @@ import './SelectBar.scss';
 
 //option에 찍으면 어떻게 처리가 받아오나?
 export default function SelectBar({ updateCategories }) {
-  const [selectedOption, setSelect] = useState('');
+  const [selectedOption, setSelectOption] = useState('');
 
   useEffect(() => {
-    updateCategories(selectedOption);
-  }, []);
+    selectedOption && updateCategories(selectedOption);
+  }, [selectedOption]);
 
   return (
-    <div>
+    <div className="selectBar">
       <select
         className="selectOption"
-        onChange={e => setSelect(e.target.value)}
+        onChange={e => setSelectOption(e.target.value)}
       >
-        <option selected value="all">
-          --Please choose an option--
-        </option>
-        <option value="avg_rating">별점 순으로</option>
-        <option value="reviews">리뷰 많은 순으로</option>
+        <option value="all">옵션을 선택하세요</option>
+        <option value="-avg_rating">별점 순으로</option>
+        <option value="-review_count">리뷰 많은 순으로</option>
       </select>
     </div>
   );

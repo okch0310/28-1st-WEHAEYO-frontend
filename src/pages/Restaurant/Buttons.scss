@@ -1,8 +1,17 @@
-.restaurantMenuTap ul li {
+@use '../../styles/variables.scss' as btnColor;
+
+.restaurantMenuTap {
+  padding: 20px;
   float: left;
-  margin: 10px;
-  border: solid 1px black;
-}
-.restaurantMenuTap ul li button {
-  width: 120px;
+  align-items: center;
+  button {
+    width: 200px;
+    height: 20px;
+    border: solid 1px black;
+    margin: 10px;
+  }
+  button:hover {
+    background-color: btnColor.$pointColor;
+    color: white;
+  }
 }
