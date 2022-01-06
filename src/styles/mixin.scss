@@ -4,3 +4,9 @@
   min-height: 100vh;
   height: 100%;
 }
+
+// 마우스 오버 효과
+@mixin mouseOver {
+  color: #fa0050;
+  cursor: pointer;
+}
