@@ -1,0 +1,54 @@
+@use '../../../styles/variables.scss' as v;
+@use '../../../styles/mixin.scss' as m;
+
+// 탭 메뉴 - 리뷰
+.reviews {
+  .stars {
+    height: 100px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    border: 1px solid #d9d9d9;
+
+    svg {
+      line-height: 1;
+      font-size: 1rem;
+      color: v.$pointColor;
+      vertical-align: top;
+    }
+  }
+  .review {
+    ul {
+      li {
+        padding: 1.4rem 1rem;
+        border-bottom: 1px solid #d9d9d9;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+        .user {
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
+
+          span {
+            font-size: 0.825rem;
+            color: #727272;
+          }
+        }
+
+        .rating {
+          font-size: 0.8rem;
+          color: v.$pointColor;
+          vertical-align: top;
+        }
+
+        .order {
+          margin-bottom: 0.2rem;
+          font-size: 0.9rem;
+          color: #727272;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@use '../../styles/variables.scss' as v;
+@use '../../styles/mixin.scss' as m;
+
+.restaurant_detail {
+  @include m.widthHeight;
+  background-color: v.$bgColor;
+  padding: 1.5rem 0 2rem 0;
+
+  .loading {
+    height: 80vh;
+    position: relative;
+
+    img {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  main {
+    max-width: 1020px;
+    margin: 0 auto;
+
+    .go_back_btn {
+      padding-bottom: 1.5rem;
+
+      button {
+        border: 1px solid #d9d9d9;
+        padding: 0.4rem 0.6rem;
+
+        &:hover {
+          color: v.$whiteColor;
+          border-color: v.$themeColor;
+          background-color: v.$themeColor;
+        }
+
+        span {
+          font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+          font-size: 1rem;
+        }
+      }
+    }
+
+    // 음식점 정보
+    section.restaurant_info {
+      padding-bottom: 2rem;
+      display: flex;
+
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 10%;
+        object-fit: cover;
+      }
+
+      .info {
+        padding-left: 1rem;
+
+        .stars {
+          height: 20px;
+          font-size: 0.8rem;
+          color: v.$pointColor;
+        }
+      }
+    }
+
+    // 메뉴 & 리뷰 탭 메뉴
+    .tabs {
+      padding-bottom: 1.5rem;
+
+      ul {
+        display: flex;
+
+        li {
+          width: 50%;
+          height: 40px;
+          border: 1px solid #d9d9d9;
+          text-align: center;
+          line-height: 40px;
+
+          &:hover {
+            @include m.mouseOver;
+          }
+        }
+
+        .active {
+          border-color: v.$themeColor;
+          background-color: v.$themeColor;
+          color: v.$whiteColor;
+        }
+      }
+    }
+  }
+}
