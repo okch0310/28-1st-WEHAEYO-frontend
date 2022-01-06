@@ -2,7 +2,6 @@
 .mainPage1 {
   display: flex;
   justify-content: center;
-  // align-items: center;
 
   .mainImg {
     position: relative;
@@ -10,18 +9,19 @@
   }
   .mainSearchWrap {
     position: absolute;
+
     .mainInput {
       width: 364px;
       height: 40px;
-      border-radius: 5px;
       margin-top: 350px;
-    }
+      border-radius: 5px;
+      
     .mainBtn {
       width: 40px;
       height: 40px;
-      border-radius: 5px;
-      background-color: variable.$pointColor;
       margin-left: 5px;
+      background-color: variable.$pointColor;
+      border-radius: 5px;
     }
   }
 }
@@ -30,23 +30,24 @@
   display: flex;
   height: 1000px;
   background-color: black;
+
   .foodKindList {
-    width: 1000px;
     display: flex;
-    margin: auto auto;
     justify-content: space-between;
     position: relative;
+    width: 1000px;
+    margin: auto auto;
 
     img {
-      border-radius: 15px;
       width: 300px;
       height: 300px;
       border: lavenderblush 3px solid;
+      border-radius: 15px;
     }
+
     .foodName {
       position: absolute;
       top: 15px;
-      // left: 30px;
       color: ivory;
       border: lavenderblush 3px solid;
     }
