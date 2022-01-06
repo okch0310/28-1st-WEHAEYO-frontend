@@ -38,15 +38,17 @@
     position: relative;
 
     img {
+      border-radius: 15px;
       width: 300px;
       height: 300px;
-      border: lavenderblush 2px solid;
+      border: lavenderblush 3px solid;
     }
     .foodName {
       position: absolute;
-      top: 0;
+      top: 15px;
+      // left: 30px;
       color: ivory;
-      border: lavenderblush 2px solid;
+      border: lavenderblush 3px solid;
     }
   }
 }
