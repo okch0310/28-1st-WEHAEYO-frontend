@@ -1,8 +1,7 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { ModalContext } from '../modalContext';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import ModalLayout from './ModalLayout';
-import { useEffect } from 'react/cjs/react.development';
 
 export default function Modal() {
   let { isModalOpen, modalContent } = useContext(ModalContext);
@@ -69,11 +68,7 @@ export default function Modal() {
                               name="menu_option"
                               id={option.option_id}
                               value={option.price}
-                              checked={
-                                option.option_id === selectedOption
-                                  ? true
-                                  : false
-                              }
+                              checked={option.option_id === selectedOption}
                               onChange={handleMenuOptions}
                             />
                             {option.content}

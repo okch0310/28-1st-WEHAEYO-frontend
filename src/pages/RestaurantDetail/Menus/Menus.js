@@ -1,5 +1,5 @@
-import Menu from './Menu';
 import SignatureMenu from './SignatureMenu';
+import Menu from './Menu';
 import './Menus.scss';
 
 export default function Menus({ menus, signature }) {

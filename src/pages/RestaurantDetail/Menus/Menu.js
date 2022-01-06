@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
-import { MdKeyboardArrowDown } from 'react-icons/md';
 import { ModalContext } from '../modalContext';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 export default function Menu({ category_name, foods, id }) {
   let { openModal } = useContext(ModalContext);

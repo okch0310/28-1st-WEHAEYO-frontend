@@ -11,6 +11,7 @@ export default function ModalLayout({ children }) {
   const submitMenuOrder = () => {
     setIsActiveToast(true);
   };
+
   useEffect(() => {
     if (isActiveToast) {
       setTimeout(() => {

@@ -1,7 +1,6 @@
 import { RenderStars } from '../../utils/RenderStars';
 import { MdPlace } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import './RestaurantDetail.scss';
 
 export default function RestaurantInfo({
   title,

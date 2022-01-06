@@ -1,11 +1,12 @@
-import Tabs from './Tabs';
-import Menus from './Menus/Menus';
-import RestaurantInfo from './RestaurantInfo';
-import Reviews from './Reviews/Reviews';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ModalProvider } from './modalContext';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
-import { useNavigate } from 'react-router-dom';
+import RestaurantInfo from './RestaurantInfo';
+import Tabs from './Tabs';
+import Menus from './Menus/Menus';
+import Reviews from './Reviews/Reviews';
+import './RestaurantDetail.scss';
 
 export default function RestaurantDetail() {
   const [menus, setMenus] = useState();
