@@ -60,13 +60,6 @@ export default function Signup() {
           <input
             className="inputBox"
             type="text"
-            placeholder="전화번호 (ex:010-1234-5678)"
-            onChange={handlePhoneInput}
-            value={phone}
-          />
-          <input
-            className="inputBox"
-            type="text"
             placeholder="이메일"
             value={id}
             onChange={handleIdInput}
