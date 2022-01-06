@@ -4,7 +4,7 @@ import './Buttons.scss';
 export default function Buttons({ updateKeywords }) {
   return (
     <div className="restaurantMenuTap">
-      <button type="button" onClick={() => updateKeywords('all')} value="all">
+      <button type="button" onClick={() => updateKeywords('')} value="all">
         전체
       </button>
       <button
