@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Main.scss';
 
 export default function Main() {
@@ -8,6 +9,16 @@ export default function Main() {
       .then(res => res.json())
       .then(res => setFoodKindList(res.result));
   }, []);
+  const navigate = useNavigate();
+  function selectMenuCategory(category_name) {
+    if (category_name === '한식') {
+      navigate('/restaurants/list?category=korean');
+    } else if (category_name === '중식') {
+      navigate('/restaurants/list?category=chinese');
+    } else {
+      navigate('/restaurants/list?category=japanese');
+    }
+  }
 
   return (
     <div className="Main">
@@ -27,7 +38,11 @@ export default function Main() {
           {foodKindList.length &&
             foodKindList.map((ele, idx) => {
               return (
-                <div className="foodKind" key={idx}>
+                <div
+                  className="foodKind"
+                  key={idx}
+                  onClick={() => selectMenuCategory(ele.category_name)}
+                >
                   <img src={ele.image_url} alt="대체이미지" />
                   <div className="foodName">{ele.category_name}</div>
                 </div>

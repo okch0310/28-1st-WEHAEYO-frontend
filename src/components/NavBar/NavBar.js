@@ -12,7 +12,9 @@ export default function NavBar() {
           </Link>
         </h1>
         <div>
-          <button type="button">로그인</button>
+          <Link to="/login">
+            <button type="button">로그인</button>
+          </Link>
           <button type="button">장바구니</button>
         </div>
       </div>
