@@ -12,7 +12,7 @@ export default function Main() {
 
   return (
     <div className="Main">
-      <div className="mainPage1">
+      <div className="mainPageSearch">
         <img
           className="mainImg"
           src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
@@ -23,7 +23,7 @@ export default function Main() {
           <button className="mainBtn">검색</button>
         </div>
       </div>
-      <div className="mainPage2">
+      <div className="mainPageSelect">
         <div className="foodKindList">
           {foodKindList.length &&
             foodKindList.map((ele, idx) => {
