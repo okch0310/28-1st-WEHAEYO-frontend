@@ -20,6 +20,12 @@
       {
         "endOfLine": "auto"
       }
+    ],
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowArrowFunction": true
+      }
     ]
   }
 }
