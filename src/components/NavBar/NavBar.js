@@ -7,7 +7,7 @@ export default function NavBar() {
     <div className="NavBar">
       <div className="navInside">
         <h1>
-          <Link to="/main">
+          <Link to="/">
             WE<span>해요</span>
           </Link>
         </h1>
