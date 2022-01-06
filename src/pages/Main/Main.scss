@@ -26,36 +26,39 @@
   }
 }
 
-  .mainPageSelect {
+.mainPageSelect {
+  display: flex;
+  height: 1000px;
+  background-color: black;
+
+  .foodKindList {
     display: flex;
-    height: 1000px;
-    background-color: black;
+    justify-content: space-between;
+    position: relative;
+    width: 1000px;
+    margin: auto auto;
+    .foodKind {
+      &:hover {
+        cursor: pointer;
+      }
 
-    .foodKindList {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      width: 1000px;
-      margin: auto auto;
-      .foodKind {
-        img {
-          width: 300px;
-          height: 300px;
-          border: lavenderblush 3px solid;
-          border-radius: 15px;
-        }
+      img {
+        width: 300px;
+        height: 300px;
+        border: lavenderblush 3px solid;
+        border-radius: 15px;
+      }
 
-        img:hover {
-          border: variable.$pointColor 3px solid;
-        }
+      img:hover {
+        border: variable.$pointColor 3px solid;
+      }
 
-        .foodName {
-          position: absolute;
-          top: 15px;
-          color: ivory;
-          border: lavenderblush 3px solid;
-        }
+      .foodName {
+        position: absolute;
+        top: 15px;
+        color: ivory;
+        border: lavenderblush 3px solid;
       }
     }
   }
-
+}
