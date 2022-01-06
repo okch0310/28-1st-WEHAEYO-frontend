@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.scss';
 
 export default function NavBar() {
@@ -6,7 +7,9 @@ export default function NavBar() {
     <div className="NavBar">
       <div className="navInside">
         <h1>
-          WE<span>해요</span>
+          <Link to="/main">
+            WE<span>해요</span>
+          </Link>
         </h1>
         <div>
           <button type="button">로그인</button>

@@ -21,6 +21,12 @@
       }
     }
 
+    h1 {
+      a {
+        color: variable.$pointColor;
+      }
+    }
+
     button {
       width: 150px;
       height: 40px;
