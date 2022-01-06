@@ -1,0 +1,29 @@
+@use '../../styles/variables.scss' as color;
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  padding: auto;
+  border: 1px solid #d9d9d9;
+  margin: 20px;
+  cursor: pointer;
+
+  .listImg img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .listMain {
+    padding: 10px;
+    .iconStar {
+      color: color.$pointColor;
+    }
+    .reviewNumber:before {
+      content: '|';
+      margin: 5px;
+    }
+  }
+}
