@@ -45,6 +45,10 @@
         border-radius: 15px;
       }
 
+      img:hover {
+        border: variable.$pointColor 3px solid;
+      }
+
       .foodName {
         position: absolute;
         top: 15px;
