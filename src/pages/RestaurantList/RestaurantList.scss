@@ -1,12 +1,12 @@
+@import '../../styles/mixin.scss';
+
 .restaurantList {
+  @include widthHeight;
   .listOptions {
-    position: relative;
+    margin: 0 20px;
   }
   .restaurantListMain {
     display: grid;
-    align-items: center;
-    justify-content: center;
-    min-width: 1200px;
     margin: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;

@@ -5,28 +5,28 @@ export default function Buttons({ updateKeywords }) {
   return (
     <div className="restaurantMenuTap">
       <button type="button" onClick={() => updateKeywords('')} value="all">
-        전체
+        전 체
       </button>
       <button
         type="button"
         onClick={() => updateKeywords('korean')}
         value="korean"
       >
-        한식
+        한 식
       </button>
       <button
         type="button"
         onClick={() => updateKeywords('chinese')}
         value="chinese"
       >
-        중식
+        중 식
       </button>
       <button
         type="button"
         onClick={() => updateKeywords('japanese')}
         value="japanese"
       >
-        일식
+        일 식
       </button>
     </div>
   );

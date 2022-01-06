@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import './RestaurantList.scss';
 import Buttons from '../Restaurant/Buttons';
 import SelectBar from '../Restaurant/SelectBar';
+// import mixin from '../../styles/mixin.scss';
 
 export default function RestaurantList() {
   const [restaurants, setRestaurants] = useState([]);
