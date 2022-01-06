@@ -4,6 +4,8 @@ import RestaurantInfo from './RestaurantInfo';
 import Reviews from './Reviews/Reviews';
 import { useEffect, useState } from 'react';
 import { ModalProvider } from './modalContext';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 export default function RestaurantDetail() {
   const [menus, setMenus] = useState();
@@ -25,6 +27,11 @@ export default function RestaurantDetail() {
     setCurrentTab(idx);
   };
 
+  const navigate = useNavigate();
+  const goBackToList = () => {
+    navigate(-1);
+  };
+
   if (!menus || !reviews) {
     return (
       <div className="restaurant_detail">
@@ -38,6 +45,12 @@ export default function RestaurantDetail() {
   return (
     <div className="restaurant_detail">
       <main>
+        <div className="go_back_btn">
+          <button type="button" onClick={goBackToList}>
+            <AiOutlineArrowLeft />
+            <span>&nbsp;목록으로</span>
+          </button>
+        </div>
         <RestaurantInfo
           title={menus.name}
           image={menus.restaurant_img}
