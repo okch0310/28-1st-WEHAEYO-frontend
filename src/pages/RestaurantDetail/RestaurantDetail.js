@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ModalProvider } from './modalContext';
+import { DEV_URL } from '../../config';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import RestaurantInfo from './RestaurantInfo';
 import Tabs from './Tabs';
@@ -14,9 +15,9 @@ export default function RestaurantDetail() {
   const [currentTab, setCurrentTab] = useState(0);
 
   useEffect(() => {
-    fetch('/data/RestaurantDetail/restaurantinfo.json')
+    fetch(DEV_URL)
       .then(res => res.json())
-      .then(result => setMenus(result));
+      .then(result => setMenus(result.restaurants_detail));
 
     fetch('/data/RestaurantDetail/restaurantreview.json')
       .then(res => res.json())

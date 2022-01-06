@@ -8,7 +8,7 @@ export const RenderStars = rating => {
   for (let i = 0; i < Number(stringRating[0]); i++) {
     resultArray.push(<FullStar key={i} />);
   }
-  if (stringRating.length > 1)
+  if (stringRating.length > 1 && Number(stringRating[1]) === 5)
     resultArray.push(<HalfStar key={resultArray.length} />);
   const resultArrayLength = resultArray.length;
   if (Number(stringRating[0]) < 5) {
