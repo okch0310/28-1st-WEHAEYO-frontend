@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { ModalProvider } from './modalContext';
 import { DEV_URL } from '../../config';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
@@ -14,8 +14,10 @@ export default function RestaurantDetail() {
   const [reviews, setReviews] = useState([]);
   const [currentTab, setCurrentTab] = useState(0);
 
+  const restaurantId = useParams();
+
   useEffect(() => {
-    fetch(DEV_URL)
+    fetch(`${DEV_URL}/${restaurantId.id}`)
       .then(res => res.json())
       .then(result => setMenus(result.restaurants_detail));
 
@@ -23,7 +25,7 @@ export default function RestaurantDetail() {
       .then(res => res.json())
       .then(result => setReviews(result));
     return () => {};
-  }, []);
+  }, [restaurantId.id]);
 
   const selectTabMenu = idx => {
     setCurrentTab(idx);
