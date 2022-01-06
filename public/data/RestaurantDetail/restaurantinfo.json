@@ -5,53 +5,57 @@
   "phone": "02-172-2847",
   "rating": 1.5,
   "restaurant_img": "macdonalds.png",
-  "signature_menu": [
-    {
-      "id": 1,
-      "name": "빅맥",
-      "price": 5000,
-      "image": "bigmac.png"
-    },
-    {
-      "id": 2,
-      "name": "리치포테이토버거",
-      "price": 8500,
-      "image": "richpotatoburger.png"
-    },
-    {
-      "id": 3,
-      "name": "트리플치즈버거",
-      "price": 6500,
-      "image": "triplecheeseburger.png"
-    },
-    {
-      "id": 4,
-      "name": "빅맥",
-      "price": 5000,
-      "image": "bigmac.png"
-    },
-    {
-      "id": 5,
-      "name": "리치포테이토버거",
-      "price": 8500,
-      "image": "richpotatoburger.png"
-    },
-    {
-      "id": 6,
-      "name": "트리플치즈버거",
-      "price": 6500,
-      "image": "triplecheeseburger.png"
-    },
-    {
-      "id": 7,
-      "name": "빅맥",
-      "price": 5000,
-      "image": "bigmac.png"
-    }
-  ],
   "category": [
     {
       "category_id": 1,
+      "category_name": "대표 메뉴",
+      "food": [
+        {
+          "id": 1,
+          "name": "빅맥",
+          "price": 5000,
+          "image": "bigmac.png"
+        },
+        {
+          "id": 2,
+          "name": "리치포테이토버거",
+          "price": 8500,
+          "image": "richpotatoburger.png"
+        },
+        {
+          "id": 3,
+          "name": "트리플치즈버거",
+          "price": 6500,
+          "image": "triplecheeseburger.png"
+        },
+        {
+          "id": 4,
+          "name": "빅맥",
+          "price": 5000,
+          "image": "bigmac.png"
+        },
+        {
+          "id": 5,
+          "name": "리치포테이토버거",
+          "price": 8500,
+          "image": "richpotatoburger.png"
+        },
+        {
+          "id": 6,
+          "name": "트리플치즈버거",
+          "price": 6500,
+          "image": "triplecheeseburger.png"
+        },
+        {
+          "id": 7,
+          "name": "빅맥",
+          "price": 5000,
+          "image": "bigmac.png"
+        }
+      ]
+    },
+    {
+      "category_id": 2,
       "category_name": "햄버거",
       "food": [
         {
@@ -75,7 +79,7 @@
       ]
     },
     {
-      "category_id": 2,
+      "category_id": 3,
       "category_name": "사이드",
       "food": [
         {

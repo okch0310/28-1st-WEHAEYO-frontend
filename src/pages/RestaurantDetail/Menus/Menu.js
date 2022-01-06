@@ -11,7 +11,7 @@ export default function Menu({ category_name, foods, id }) {
   };
 
   useEffect(() => {
-    const isFirstCategory = id === 1;
+    const isFirstCategory = id === 2;
     if (isFirstCategory) {
       setIsCollapsed(isFirstCategory);
     }

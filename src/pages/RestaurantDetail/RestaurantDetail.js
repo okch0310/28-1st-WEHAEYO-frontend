@@ -62,7 +62,10 @@ export default function RestaurantDetail() {
         <Tabs selectTabMenu={selectTabMenu} currentTab={currentTab} />
         {currentTab === 0 ? (
           <ModalProvider>
-            <Menus menus={menus.category} signature={menus.signature_menu} />
+            <Menus
+              menus={menus.category.filter(menu => menu.category_id !== 1)}
+              signature={menus.category[0].food}
+            />
           </ModalProvider>
         ) : (
           <Reviews reviews={reviews.reviews} rating={menus.rating} />
