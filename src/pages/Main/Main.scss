@@ -1,0 +1,60 @@
+@use '../../styles/variables.scss' as variable;
+.mainPageSearch {
+  display: flex;
+  justify-content: center;
+
+  .mainImg {
+    position: relative;
+    width: 100%;
+  }
+  .mainSearchWrap {
+    position: absolute;
+
+    .mainInput {
+      width: 364px;
+      height: 40px;
+      margin-top: 350px;
+      border-radius: 5px;
+
+      .mainBtn {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        background-color: variable.$pointColor;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .mainPageSelect {
+    display: flex;
+    height: 1000px;
+    background-color: black;
+
+    .foodKindList {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 1000px;
+      margin: auto auto;
+
+      img {
+        width: 300px;
+        height: 300px;
+        border: lavenderblush 3px solid;
+        border-radius: 15px;
+      }
+
+      img:hover {
+        border: variable.$pointColor 3px solid;
+      }
+
+      .foodName {
+        position: absolute;
+        top: 15px;
+        color: ivory;
+        border: lavenderblush 3px solid;
+      }
+    }
+  }
+}

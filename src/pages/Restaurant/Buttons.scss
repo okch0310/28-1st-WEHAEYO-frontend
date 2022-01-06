@@ -1,0 +1,15 @@
+@use '../../styles/variables.scss' as btnColor;
+
+.restaurantMenuTap {
+  button {
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    border: solid 1px black;
+    margin: 10px;
+  }
+  button:hover {
+    background-color: btnColor.$pointColor;
+    color: white;
+  }
+}
