@@ -33,10 +33,7 @@ export default function Menu({ category_name, foods, id }) {
                   <p>{food.price}원</p>
                 </div>
                 <div className="photo">
-                  <img
-                    alt={food.name}
-                    src={`images/RestaurantDetail/${food.image}`}
-                  />
+                  <img alt={food.name} src={`${food.image}`} />
                 </div>
               </li>
             );

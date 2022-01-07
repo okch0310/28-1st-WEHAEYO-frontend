@@ -11,7 +11,7 @@ export default function RestaurantInfo({
 }) {
   return (
     <section className="restaurant_info">
-      <img alt={`${title}`} src={`images/RestaurantDetail/${image}`} />
+      <img alt={`${title}`} src={`${image}`} />
       <div className="info">
         <h1>{title}</h1>
         <div className="stars">

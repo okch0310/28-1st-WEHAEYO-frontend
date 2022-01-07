@@ -42,10 +42,7 @@ export default function SignatureMenu({ signatures }) {
               id={signature.id}
               onClick={() => openModal(signature.id)}
             >
-              <img
-                alt={signature.name}
-                src={`images/RestaurantDetail/${signature.image}`}
-              />
+              <img alt={signature.name} src={`${signature.image}`} />
               <div className="menu_info">
                 <p>{signature.name}</p>
                 <p>{signature.price}원</p>
@@ -54,22 +51,24 @@ export default function SignatureMenu({ signatures }) {
           );
         })}
       </ul>
-      <div>
-        <button
-          type="button"
-          className={isValidMoveMenu ? 'hidden' : ''}
-          onClick={slideToPrevImage}
-        >
-          <IoMdArrowDropleftCircle />
-        </button>
-        <button
-          type="button"
-          className={isValidMoveMenu ? '' : 'hidden'}
-          onClick={slideToNextImage}
-        >
-          <IoMdArrowDroprightCircle />
-        </button>
-      </div>
+      {signatures.length > 6 && (
+        <div>
+          <button
+            type="button"
+            className={isValidMoveMenu ? 'hidden' : ''}
+            onClick={slideToPrevImage}
+          >
+            <IoMdArrowDropleftCircle />
+          </button>
+          <button
+            type="button"
+            className={isValidMoveMenu ? '' : 'hidden'}
+            onClick={slideToNextImage}
+          >
+            <IoMdArrowDroprightCircle />
+          </button>
+        </div>
+      )}
     </div>
   );
 }
