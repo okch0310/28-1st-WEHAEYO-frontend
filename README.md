@@ -53,7 +53,7 @@
 
 2. 협업 도구
    1. 트렐로
-      [](https://user-images.githubusercontent.com/81794430/148511023-b3966a02-c05c-45f5-8590-358a239d2156.png)
+      <img alt="트렐로" src="https://user-images.githubusercontent.com/81794430/148511023-b3966a02-c05c-45f5-8590-358a239d2156.png" />
       - 전체필독사항
         - 팀원 모두가 반드시 알아야 하는 사항
         - 컨벤션, 프로젝트 기획 문서, 기능 정의 문서
