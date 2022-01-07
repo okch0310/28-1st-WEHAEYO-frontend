@@ -101,6 +101,8 @@
 
 <img alt="" src="https://user-images.githubusercontent.com/81794430/148521465-821e9821-4f5e-4740-9caa-5cd7571e8b37.png" />
 <img alt="" src="https://user-images.githubusercontent.com/81794430/148521650-c8c82a4a-7310-4f38-8f4a-a6993cfd40ea.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148522468-d2b5793e-2704-4845-9a0c-91a85aa4fc83.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148522575-172c0ce7-f810-450d-a86f-a25e32575cea.png" />
 
 ### 식당 상세 페이지
 
