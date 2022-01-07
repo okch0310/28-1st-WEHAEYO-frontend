@@ -85,10 +85,29 @@
 
 ### 메인 페이지
 
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02T2QL5X43/image.png" />
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SW3U8Y78/image.png" />
+
 ### 회원가입 페이지
+
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SN5K5CT1/image.png" />
 
 ### 로그인 페이지
 
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02T2PU2GGJ/image.png" />
+
 ### 식당 목록 페이지
 
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02TFDFR76V/image.png" />
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SZS68K37/image.png" />
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SW3ZLEH4/image.png" />
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SW42DUK0/image.png" />
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02T2R2RGBD/image.png" />
+<img alt="" src="https://files.slack.com/files-tmb/TH0U6FBTN-F02SN5ZUPTR-08ab650bdc/image_720.png" />
+
 ### 식당 상세 페이지
+
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SN5ZUPTR/image.png" />
+<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02TSGEAW2U/image.png" />
+<img alt="" src="https://files.slack.com/files-tmb/TH0U6FBTN-F02SZSGJV29-c87c955737/image_720.png" />
+<img alt="" src="https://files.slack.com/files-tmb/TH0U6FBTN-F02TSGGEJL8-59f8ebcbe7/image_720.png" />
