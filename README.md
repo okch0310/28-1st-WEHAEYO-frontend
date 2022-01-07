@@ -85,29 +85,26 @@
 
 ### 메인 페이지
 
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02T2QL5X43/image.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148519861-d0359ef8-4e05-4cba-ad4c-2ac06586fc5b.png" />
 <img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SW3U8Y78/image.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148520768-4eb5f1e7-c53e-4555-8040-ea68d73ffd84.png" />
 
 ### 회원가입 페이지
 
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SN5K5CT1/image.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148520104-fc9cabaa-ff02-41cb-ad57-f04eb3338ff4.png" />
 
 ### 로그인 페이지
 
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02T2PU2GGJ/image.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148520522-c85f3e8d-84d2-4269-959e-84a98a52edce.png" />
 
 ### 식당 목록 페이지
 
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02TFDFR76V/image.png" />
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SZS68K37/image.png" />
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SW3ZLEH4/image.png" />
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SW42DUK0/image.png" />
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02T2R2RGBD/image.png" />
-<img alt="" src="https://files.slack.com/files-tmb/TH0U6FBTN-F02SN5ZUPTR-08ab650bdc/image_720.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148521465-821e9821-4f5e-4740-9caa-5cd7571e8b37.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148521650-c8c82a4a-7310-4f38-8f4a-a6993cfd40ea.png" />
 
 ### 식당 상세 페이지
 
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02SN5ZUPTR/image.png" />
-<img alt="" src="https://files.slack.com/files-pri/TH0U6FBTN-F02TSGEAW2U/image.png" />
-<img alt="" src="https://files.slack.com/files-tmb/TH0U6FBTN-F02SZSGJV29-c87c955737/image_720.png" />
-<img alt="" src="https://files.slack.com/files-tmb/TH0U6FBTN-F02TSGGEJL8-59f8ebcbe7/image_720.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148521874-795e60eb-4d06-4098-9df9-07c6e1202f50.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148521942-42dff6cd-56b1-4554-ad31-de5b9bb7584f.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148522028-1bc9f547-194c-40c6-aa5b-b75623c391de.png" />
+<img alt="" src="https://user-images.githubusercontent.com/81794430/148522115-bf3da901-8df8-467c-ad68-4830696897c2.png" />
