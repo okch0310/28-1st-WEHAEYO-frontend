@@ -39,6 +39,7 @@
 ### 백엔드
 
 [이아영](https://github.com/leeay3)
+
 [이찬영](https://github.com/coldzero94)
 
 ## 3. 협업 방식 및 도구
